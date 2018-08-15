@@ -45,6 +45,11 @@ body {
     position: relative;
     top: 2px;
   }
+  // Remove any link styling for tap-to-talk button:
+  a {
+    text-decoration: none;
+    color: #000;
+  }
   // Ensure call image only gets so big:
   img {
     width: 7%;

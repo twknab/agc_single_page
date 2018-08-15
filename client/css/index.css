@@ -25,6 +25,9 @@ body {
     margin-left: 3px;
     position: relative;
     top: 2px; }
+  #header-wrapper a {
+    text-decoration: none;
+    color: #000; }
   #header-wrapper img {
     width: 7%;
     max-width: 23px;
