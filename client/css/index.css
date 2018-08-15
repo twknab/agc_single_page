@@ -159,3 +159,27 @@ body {
       #hero-wrapper #hero-wrapper h1 {
         font-size: 1.4rem;
         margin: auto 0px 15px 0px; } }
+
+#video-wrapper {
+  margin-bottom: 2px; }
+  #video-wrapper p {
+    font-size: 1.27rem;
+    margin-top: 16px;
+    line-height: 1.3; }
+  #video-wrapper p:nth-child(1) {
+    margin-bottom: 0px; }
+  #video-wrapper #video-sub-text {
+    margin-top: 0px; }
+  #video-wrapper #video {
+    margin-top: auto;
+    margin-bottom: auto; }
+  @media screen and (min-width: 813px) {
+    #video-wrapper {
+      padding: 40px 20px 30px 20px;
+      margin-top: auto;
+      margin-bottom: auto; }
+      #video-wrapper p {
+        font-size: 2em; }
+      #video-wrapper .col-sm-6 {
+        margin-top: auto;
+        margin-bottom: auto; } }

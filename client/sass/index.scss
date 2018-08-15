@@ -245,5 +245,45 @@ body {
       margin: auto 0px 15px 0px;
     }
   }
+}
+
+// SCSS for Video Wrapper:
+#video-wrapper {
+  margin-bottom: 2px;
+
+  p {
+    font-size: 1.27rem;
+    margin-top: 16px;
+    line-height: 1.3;
+  }
+
+  p:nth-child(1) {
+    margin-bottom: 0px;
+  }
+
+  #video-sub-text {
+    margin-top: 0px;
+  }
+
+  #video {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  @media screen and (min-width: 813px) {
+    padding: 40px 20px 30px 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    p {
+      font-size: 2em;
+    }
+
+    .col-sm-6 {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+  }
 
 }
