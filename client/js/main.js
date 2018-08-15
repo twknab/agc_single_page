@@ -17,9 +17,9 @@ $(document).ready(function () {
 
     // If business hours for today are still open, display phone number:
     if (hours[day].starting_time <= time && hours[day].closing_time > time) {
-      console.log("STILL OPEN");
+      $('#contact-wrapper').show();
     } else {
-      console.log("WE'RE CLOSED");
+      $('#contact-wrapper').hide();
     }
 
 
