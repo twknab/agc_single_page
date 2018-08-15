@@ -1,11 +1,105 @@
-// SASS file for AlgaeCal Single Page Website:
+// SCSS For AlgaeCal Single Page Website
+// Tim Knab - August 2018
+
+/* 
+Note: Install gulp and gulp-sass from `package.json` via `npm install` and then run `gulp styles` or `gulp watch` to render CSS output for any changes in this file.
+*/
 
 // Import Roboto:
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
+// SCSS For Body:
 body {
   font: {
     // Set font to Glober with Roboto as backup:
     family: 'Glober', 'Roboto', sans-serif;
+  }
+}
+
+// SCSS for Header Wrapper (Logo and Phone):
+#header-wrapper {
+  // Add left margin to header:
+  margin-left: 3px;
+  margin-bottom: 9px;
+  // Adjust color and margin of h1:
+  h1 {
+    color: #676870;
+    margin-top: -1px;
+    font-size: 2.7rem;
+  }
+  // Adjust font-weight and size of h2:
+  h2 {
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-left: -3px;
+    // Media query to remove margin for small screensizes:
+    @media screen and (max-width: 461px) {
+      margin-bottom: 0px;
+    }
+  }
+  // Adjust font-size and position of h3:
+  h3 {
+    font-size: 1rem;
+    display: inline;
+    margin-left: 4px;
+    position: relative;
+    top: 2px;
+  }
+  // Ensure call image only gets so big:
+  img {
+    width: 7%;
+    max-width: 23px;
+    position: relative;
+    right: 1px;
+  }
+  // Adjust circle above Logo text:
+  .logo-circle {
+    width: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    -moz-border-radius: 50%;
+    border: 2px solid #3fac29;
+    height: 8px;
+    position: relative;
+    left: 95px;
+    top: 18px;
+  }
+  // Set phone color:
+  #phone {
+    color: #54b8cd;
+  }
+
+  // Header Wrapper Media Queries for Screen Sizes above 576px:
+  @media screen and (min-width: 576px) {
+    #contact-wrapper {
+      padding: 18px;
+      text-align: right;
+      position: relative;
+      top: 15px;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+    .logo-circle {
+      height: 10px;
+      width: 10px;
+      left: 124px;
+      top: 22px;
+    }
+  }
+}
+
+// SCSS For Hero Wrapper (Primary Banner):
+#hero-wrapper {
+  background-color: green;
+  padding-top: 25px;
+
+  h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+    letter-spacing: 2.5px;
   }
 }

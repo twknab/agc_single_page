@@ -22,15 +22,14 @@
     <!-- Header Logo and Header Text -->
     <div class="row" id="header-wrapper">
       <div class="col-sm-6">
+        <div class="logo-circle"></div>
         <h1>AlgaeCal</h1>
       </div>
       <div class="col-sm-6">
-        <div class="row">
+        <div class="row" id="contact-wrapper">
           <div class="col-sm-12">
-            <h2>Tap To Talk 1-800-820-0184</h2>
-          </div>
-          <div class="col-sm-12">
-            <h3>Speak to our Bone Health Specialists!</h3>
+            <h2>Tap to Talk <span id="phone">1-800-820-0184</span></h2>
+            <img src="/client/img/phone-icon.png"><h3>Speak to our Bone Health Specialists!</h3>
           </div>
         </div>
       </div>
@@ -305,12 +304,16 @@
   </div>
 
   <!-- Bootstrap JS & jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <!-- Moment & Moment Timezone Libraries  -->
+  <script type="application/javascript" src="/client/js/moment.js"></script>
+  <script type="application/javascript" src="/client/js/moment-timezone-with-data.js"></script>
+  <!-- Main JS File -->
+  <script type="application/javascript" src="/client/js/main.js"></script>
 </body>
 
 </html>

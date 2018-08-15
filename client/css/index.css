@@ -1,3 +1,68 @@
+/* 
+Note: Install gulp and gulp-sass from `package.json` via `npm install` and then run `gulp styles` or `gulp watch` to render CSS output for any changes in this file.
+*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 body {
   font-family: 'Glober', 'Roboto', sans-serif; }
+
+#header-wrapper {
+  margin-left: 3px;
+  margin-bottom: 9px; }
+  #header-wrapper h1 {
+    color: #676870;
+    margin-top: -1px;
+    font-size: 2.7rem; }
+  #header-wrapper h2 {
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-left: -3px; }
+    @media screen and (max-width: 461px) {
+      #header-wrapper h2 {
+        margin-bottom: 0px; } }
+  #header-wrapper h3 {
+    font-size: 1rem;
+    display: inline;
+    margin-left: 4px;
+    position: relative;
+    top: 2px; }
+  #header-wrapper img {
+    width: 7%;
+    max-width: 23px;
+    position: relative;
+    right: 1px; }
+  #header-wrapper .logo-circle {
+    width: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    -moz-border-radius: 50%;
+    border: 2px solid #3fac29;
+    height: 8px;
+    position: relative;
+    left: 95px;
+    top: 18px; }
+  #header-wrapper #phone {
+    color: #54b8cd; }
+  @media screen and (min-width: 576px) {
+    #header-wrapper #contact-wrapper {
+      padding: 18px;
+      text-align: right;
+      position: relative;
+      top: 15px; }
+    #header-wrapper h1 {
+      font-size: 3.5rem; }
+    #header-wrapper .logo-circle {
+      height: 10px;
+      width: 10px;
+      left: 124px;
+      top: 22px; } }
+
+#hero-wrapper {
+  background-color: green;
+  padding-top: 25px; }
+  #hero-wrapper h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+    letter-spacing: 2.5px; }
