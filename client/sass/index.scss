@@ -1,9 +1,11 @@
-// This is a test
+// SASS file for AlgaeCal Single Page Website:
 
-// Another test.
+// Import Roboto:
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
-$color: green;
-
-.bg {
-  background-color: $color;
+body {
+  font: {
+    // Set font to Glober with Roboto as backup:
+    family: 'Glober', 'Roboto', sans-serif;
+  }
 }
