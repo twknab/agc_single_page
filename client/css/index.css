@@ -102,8 +102,8 @@ body {
     color: white;
     font-size: 2rem;
     margin-top: -5px;
-    width: 71%;
-    max-width: 369px;
+    width: auto;
+    max-width: 352px;
     min-width: 315px;
     font-weight: 500;
     line-height: 1.32em;
@@ -136,9 +136,10 @@ body {
       #hero-wrapper h1 {
         font-size: 3em; }
       #hero-wrapper p {
-        font-size: 2.7rem; }
+        font-size: 2.7rem;
+        max-width: 435px; }
       #hero-wrapper p:nth-child(2) {
-        background-size: 95.5% 42%;
+        background-size: 80.5% 42%;
         background-position-y: 153px;
         background-position-x: -8px; }
       #hero-wrapper #increases-bone-density {
