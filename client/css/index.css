@@ -103,7 +103,7 @@ body {
     font-size: 2rem;
     margin-top: -5px;
     width: auto;
-    max-width: 352px;
+    max-width: 315px;
     min-width: 315px;
     font-weight: 500;
     line-height: 1.32em;
@@ -124,7 +124,7 @@ body {
     display: block;
     background-image: url(/client/img/underlines.png);
     background-repeat: no-repeat;
-    background-size: 77% 42%;
+    background-size: 80% 42%;
     background-position-y: 114px;
     background-position-x: -7px; }
   @media screen and (min-width: 576px) {
@@ -144,3 +144,18 @@ body {
         background-position-x: -8px; }
       #hero-wrapper #increases-bone-density {
         font-size: 3rem; } }
+  @media screen and (max-width: 360px) {
+    #hero-wrapper {
+      height: 100%; }
+      #hero-wrapper p:nth-child(2) {
+        background-image: none; }
+      #hero-wrapper #increases-bone-density {
+        text-decoration: underline;
+        text-decoration-color: #e81010; }
+      #hero-wrapper p {
+        width: 100%;
+        min-width: 100%;
+        left: 0px; }
+      #hero-wrapper #hero-wrapper h1 {
+        font-size: 1.4rem;
+        margin: auto 0px 15px 0px; } }

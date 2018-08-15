@@ -154,7 +154,7 @@ body {
     font-size: 2rem;
     margin-top: -5px;
     width: auto;
-    max-width: 352px;
+    max-width: 315px;
     min-width: 315px;
     font-weight: 500;
     line-height: 1.32em;
@@ -181,14 +181,14 @@ body {
 
 
   // Add hand-drawn red underlines as background image to paragraph:
-p:nth-child(2) {
-  display: block;
-  background-image: url(/client/img/underlines.png);
-  background-repeat: no-repeat;
-  background-size: 77% 42%;
-  background-position-y: 114px;
-  background-position-x: -7px;
-}
+  p:nth-child(2) {
+    display: block;
+    background-image: url(/client/img/underlines.png);
+    background-repeat: no-repeat;
+    background-size: 80% 42%;
+    background-position-y: 114px;
+    background-position-x: -7px;
+  }
 
   // Configure hero wrapper for larger displays:
   @media screen and (min-width: 576px) {
@@ -219,6 +219,30 @@ p:nth-child(2) {
     // Scale up font-size for bone density
     #increases-bone-density {
       font-size: 3rem;
+    }
+  }
+
+  // Configure hero wrapper for very small displays:
+  @media screen and (max-width: 360px) {
+    // Set hero image height to 100%
+    height: 100%;
+
+    // Remove red underlines from Increase Bone Density Text and add red lines instead
+    p:nth-child(2) {
+      background-image: none;
+    }
+    #increases-bone-density {
+      text-decoration: underline;
+      text-decoration-color: #e81010;
+    }
+    p {
+      width: 100%;
+      min-width: 100%;
+      left: 0px;
+    }
+    #hero-wrapper h1 {
+      font-size: 1.4rem;
+      margin: auto 0px 15px 0px;
     }
   }
 
