@@ -19,7 +19,7 @@ $(document).ready(function () {
     if (hours[day].starting_time <= time && hours[day].closing_time > time) {
       $('#contact-wrapper').show();
     } else {
-      $('#contact-wrapper').hide();
+      // $('#contact-wrapper').hide();
     }
 
 

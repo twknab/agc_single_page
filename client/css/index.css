@@ -1,9 +1,13 @@
 /* 
 Note: Install gulp and gulp-sass from `package.json` via `npm install` and then run `gulp styles` or `gulp watch` to render CSS output for any changes in this file.
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 body {
   font-family: 'Glober', 'Roboto', sans-serif; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
 
 #header-wrapper {
   margin-left: 3px;
@@ -63,8 +67,13 @@ body {
         top: 22px; } }
 
 #hero-wrapper {
-  background-color: green;
-  padding-top: 25px; }
+  background-color: #4c813d;
+  padding-top: 26px;
+  background-image: url(/client/img/green-leaves-bg.jpg);
+  background-size: 160% 151%;
+  background-position-y: -15px;
+  background-position-x: -14px;
+  height: 308px; }
   #hero-wrapper h1 {
     text-transform: uppercase;
     color: white;
@@ -72,7 +81,7 @@ body {
     text-align: center;
     letter-spacing: 2.5px;
     overflow: hidden;
-    margin: auto -6px 15px -6px; }
+    margin: auto -9px 15px -9px; }
   #hero-wrapper h1:before,
   #hero-wrapper h1:after {
     background-color: #fff;
@@ -89,3 +98,47 @@ body {
   #hero-wrapper h1:after {
     left: 0.2em;
     margin-right: -50%; }
+  #hero-wrapper p {
+    color: white;
+    font-size: 2rem;
+    margin-top: -5px;
+    width: 369px;
+    font-weight: 500;
+    line-height: 1.32em;
+    margin-left: 17px; }
+  #hero-wrapper p:nth-child(3) {
+    position: relative;
+    bottom: 12.5px; }
+  #hero-wrapper .asterisk {
+    vertical-align: super;
+    font-size: 67%;
+    position: relative;
+    bottom: 3px;
+    left: 1px; }
+  #hero-wrapper #increases-bone-density {
+    font-size: 2.4rem; }
+  #hero-wrapper p:nth-child(2) {
+    display: block;
+    background-image: url(/client/img/underlines.png);
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: 77% 40%;
+    background-position-y: 117px;
+    background-position-x: -8px;
+    z-index: 40000; }
+  @media screen and (min-width: 576px) {
+    #hero-wrapper {
+      background-position-y: 0px;
+      background-position-x: 0px;
+      height: auto;
+      padding-bottom: 30px; }
+      #hero-wrapper h1 {
+        font-size: 3em; }
+      #hero-wrapper p {
+        font-size: 2.7rem; }
+      #hero-wrapper p:nth-child(2) {
+        background-size: 95.5% 42%;
+        background-position-y: 153px;
+        background-position-x: -8px; }
+      #hero-wrapper #increases-bone-density {
+        font-size: 3rem; } }

@@ -6,7 +6,7 @@ Note: Install gulp and gulp-sass from `package.json` via `npm install` and then 
 */
 
 // Import Roboto:
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 // SCSS For Body:
 body {
@@ -14,6 +14,11 @@ body {
     // Set font to Glober with Roboto as backup:
     family: 'Glober', 'Roboto', sans-serif;
   }
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 // SCSS for Header Wrapper (Logo and Phone):
@@ -102,8 +107,15 @@ body {
 
 // SCSS For Hero Wrapper (Primary Banner):
 #hero-wrapper {
-  background-color: green;
-  padding-top: 25px;
+  $bg-color: #4c813d;
+
+  background-color: $bg-color;
+  padding-top: 26px;
+  background-image: url(/client/img/green-leaves-bg.jpg);
+  background-size: 160% 151%;
+  background-position-y: -15px;
+  background-position-x: -14px;
+  height: 308px;
 
   h1 {
     text-transform: uppercase;
@@ -112,7 +124,7 @@ body {
     text-align: center;
     letter-spacing: 2.5px;
     overflow: hidden;
-    margin: auto -6px 15px -6px;
+    margin: auto -9px 15px -9px;
   }
 
   h1:before,
@@ -135,5 +147,76 @@ body {
   h1:after {
     left: 0.2em;
     margin-right: -50%;
+  }
+
+  p {
+    color: white;
+    font-size: 2rem;
+    margin-top: -5px;
+    width: 369px;
+    font-weight: 500;
+    line-height: 1.32em;
+    margin-left: 17px;
+  }
+
+  p:nth-child(3) {
+    position: relative;
+    bottom: 12.5px;
+  }
+
+  .asterisk {
+    vertical-align: super;
+    font-size: 67%;
+    position: relative;
+    bottom: 3px;
+    left: 1px;
+  }
+
+  #increases-bone-density {
+    font-size: 2.4rem;
+  }
+
+
+  // Add hand-drawn red underlines as background image to paragraph:
+p:nth-child(2) {
+  display: block;
+  background-image: url(/client/img/underlines.png);
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-size: 77% 40%;
+  background-position-y: 117px;
+  background-position-x: -8px;
+  z-index: 40000;
+}
+
+  // Configure hero wrapper for larger displays:
+  @media screen and (min-width: 576px) {
+    // Scale up hero background image
+    background-position-y: 0px;
+    background-position-x: 0px;
+    height: auto;
+    padding-bottom: 30px;
+
+    // Scales up font-size
+    h1 {
+      font-size:3em;
+    }
+
+    // Scales up font-size
+    p  {
+      font-size: 2.7rem;
+    }
+
+    // Adjusts hand-written underlines
+    p:nth-child(2) {
+      background-size: 95.5% 42%;
+      background-position-y: 153px;
+      background-position-x: -8px;
+    }
+
+    // Scale up font-size for bone density
+    #increases-bone-density {
+      font-size: 3rem;
+    }
   }
 }
