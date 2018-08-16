@@ -111,7 +111,7 @@ body {
 
   background-color: $bg-color;
   padding-top: 26px;
-  background-image: url(/client/img/green-leaves-bg.jpg);
+  background-image: url(../img/green-leaves-bg.jpg);
   background-size: 160% 151%;
   background-position-y: -15px;
   background-position-x: -14px;
@@ -183,7 +183,7 @@ body {
   // Add hand-drawn red underlines as background image to paragraph:
   p:nth-child(2) {
     display: block;
-    background-image: url(/client/img/underlines.png);
+    background-image: url(../img/underlines.png);
     background-repeat: no-repeat;
     background-size: 80% 42%;
     background-position-y: 114px;
@@ -270,7 +270,7 @@ body {
     margin-bottom: auto;
   }
 
-  @media screen and (min-width: 813px) {
+  @media screen and (min-width: 576px) {
     padding: 40px 20px 30px 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -279,7 +279,7 @@ body {
       font-size: 2em;
     }
 
-    .col-sm-6 {
+    .col-lg-6 {
       margin-top: auto;
       margin-bottom: auto;
     }
