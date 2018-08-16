@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
   // Hide Pricing Boxes by Default:
-  $('#pricing-boxes-wrapper').hide();
+  // $('#pricing-boxes-wrapper').hide();
 
   // Get Wistia Video
   window._wq = window._wq || [];
@@ -44,7 +44,7 @@ $(document).ready(function () {
       // If second of video meets or exceeds 133 (2 minutes 13 seconds), pricing boxes will be display:
       video.bind("secondchange", function (s) {
         if (s >= 133) {
-          $('#pricing-boxes-wrapper').show();
+          // $('#pricing-boxes-wrapper').show();
         }
       });
 

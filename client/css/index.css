@@ -168,7 +168,7 @@ body {
     line-height: 1.3; }
   #video-wrapper p:nth-child(1) {
     margin-bottom: 0px; }
-  #video-wrapper #video-sub-text {
+  #video-wrapper #video-tagline {
     margin-top: 0px; }
   #video-wrapper #video {
     margin-top: auto;
@@ -182,4 +182,85 @@ body {
         font-size: 2em; }
       #video-wrapper .col-lg-6 {
         margin-top: auto;
-        margin-bottom: auto; } }
+        margin-bottom: auto; }
+      #video-wrapper #video-tagline {
+        margin-bottom: 50px; } }
+
+#pricing-boxes-wrapper {
+  margin-top: 24px; }
+  #pricing-boxes-wrapper h2, #pricing-boxes-wrapper h3 {
+    text-align: center; }
+  #pricing-boxes-wrapper h2 {
+    font-size: 1.6rem; }
+  #pricing-boxes-wrapper h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #0598b3;
+    line-height: 1.1em; }
+  #pricing-boxes-wrapper .discount-badge {
+    padding: 20px;
+    background-color: #e87b15;
+    font-size: 1.4em;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0px 0px 5px 0px #000000c4;
+    margin-left: auto;
+    position: relative;
+    bottom: 0px;
+    right: 1px;
+    line-height: 1.1em; }
+    #pricing-boxes-wrapper .discount-badge span {
+      position: relative;
+      right: 5px;
+      bottom: 4px; }
+    #pricing-boxes-wrapper .discount-badge span:nth-child(1) {
+      font-weight: 500; }
+    #pricing-boxes-wrapper .discount-badge span:nth-child(2) {
+      font-weight: 300; }
+    #pricing-boxes-wrapper .discount-badge span:nth-child(3) {
+      font-size: .7em;
+      left: 1px;
+      bottom: 10px; }
+  #pricing-boxes-wrapper .card {
+    z-index: -1;
+    border: none;
+    border-radius: none;
+    box-shadow: 0px 0px 15px -3px #000000b0;
+    margin: -39px 33px -3px 33px;
+    padding-top: 19px; }
+    #pricing-boxes-wrapper .card .card-img-top {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 13px; }
+  #pricing-boxes-wrapper #three-mo-supply {
+    width: 82%; }
+  #pricing-boxes-wrapper #six-mo-supply {
+    width: 98%; }
+  #pricing-boxes-wrapper #twelve-mo-supply {
+    width: 92%; }
+  #pricing-boxes-wrapper .successive-badge {
+    position: relative;
+    top: 17px; }
+  @media screen and (min-width: 633px) and (max-width: 991px) {
+    #pricing-boxes-wrapper .discount-badge {
+      transform: scale(2);
+      right: 50px; } }
+  @media screen and (min-width: 527px) and (max-width: 632px) {
+    #pricing-boxes-wrapper .discount-badge {
+      transform: scale(1.7);
+      top: 12px;
+      right: 50px; } }
+  @media screen and (min-width: 992px) {
+    #pricing-boxes-wrapper .successive-badge {
+      top: -8px; }
+    #pricing-boxes-wrapper .discount-badge {
+      transform: scale(1.2);
+      bottom: 10px; } }
+  @media screen and (min-width: 1200px) {
+    #pricing-boxes-wrapper .discount-badge {
+      transform: scale(1.3);
+      right: 10px; } }
