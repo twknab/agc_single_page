@@ -311,6 +311,7 @@ body {
   }
   // stlyle discount badge
   .discount-badge {
+    z-index: 100;
     padding: 20px;
     background-color: #e87b15;
     font-size: 1.4em;
@@ -336,7 +337,7 @@ body {
       font-weight: 500;
     }
     span:nth-child(2) {
-      font-weight: 300;
+      font-weight: 500;
     }
     span:nth-child(3) {
       font-size: .7em;
@@ -345,40 +346,205 @@ body {
 
     }
   }
-  // customize card look and feel
+  // Customize card look and feel
   .card {
-    z-index: -1;
     border: none;
     border-radius: none;
     box-shadow: 0px 0px 15px -3px #000000b0;
-    margin: -39px 33px -3px 33px;
+    margin: -39px 44px -3px 26px;
     padding-top: 19px;
     // adjust image padding on card
     .card-img-top {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 13px;
+      margin-top: 6px;
     }
-  }
-  #three-mo-supply {
-    width: 82%;
-  }
-  #six-mo-supply {
-    width: 98%;
-  }
-  #twelve-mo-supply {
-    width: 92%;
+    .card-body {
+      padding-top: 0px;
+      text-align: center;
+      margin-top: -11px;
+      padding-bottom: 0px;
+      img {
+        width: 80px;
+        position: relative;
+        left: 25px;
+        max-width: 92px;
+        display: inline;
+      }
+    }
+    .card-text {
+      margin: 0px;
+      padding: 0px;
+    }
+    // Adjust price text:
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 1px;
+      // Adjust size on dollar sign
+      span:nth-child(1) {
+        vertical-align: super;
+        font-size: 1.2rem;
+      }
+      // Adjust size on USD text
+      span:nth-child(2) {
+        text-decoration: underline;
+        font-size: .4em;
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+    // Adjust only $/a day text:
+    h5 {
+      margin-bottom: 1px;
+      font-weight: 400;
+      span {
+        vertical-align: super;
+        font-size: .6em;
+        font-weight: bold;
+      }
+    }
+
+    .btn-primary {
+      background-color: #38a33f;
+      border-color: #24875a;
+      font-weight: 400;
+      font-size: 1.1rem;
+      border-bottom-width: 6px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      letter-spacing: 1px;
+      padding: 9px 20px 6px 30px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+    }
+    .btn-primary:hover {
+      background-color: #43c56c;
+    }
+
+    .seven-year-guarantee {
+      background-image: url(../img/7-years-guarantee-better-bone-health.png);
+      background-size: cover;
+      width: 77px;
+      height: 77px;
+      position: relative;
+      display: inline-block;
+      top: 68px;
+      right: 110px;
+    }
+    
+    i {
+      padding-left: 5px;
+      font-size: 87%;
+    }
+    .add-to-cart {
+      position: relative;
+      display: inline-block;
+      right: 34px;
+      width: 115%;
+    }
   }
   // Adjust positioning on successive badges:
   .successive-badge {
     position: relative;
     top: 17px;
   }
+    @media screen and (max-width: 337px) and (min-width: 365px) {
+      .card-body {
+        img {
+          left: -20% !important;
+          top: 60px;
+        }
+      }
+    }
+  @media screen and (max-width: 365px) {
+    h2 {
+     font-size: 1.25em; 
+    }
+    i {
+      padding-left: 0px !important;
+    }
+    .add-to-cart {
+      width: 100% !important;
+      right: 0px !important;
+      padding-left: 10px;
+      margin-top: -72px;
+    }
+    .btn-primary {
+      width: 100% !important;
+      padding: 9px 0px 6px 35px !important;
+    }
+    .card-body {
+      padding-bottom: 0px;
+      img {
+        left: -80px !important;
+        top: 63px;
+        transform: scale(.85);
+      }
+    }
+  }
+  @media screen and (max-width: 632px) and (min-width: 420px) {
+    .add-to-cart {
+      // padding: auto 50px auto 50px;
+      width: 100% !important;
+      right: 0px !important;
+      margin-top: -67px;
+      padding: 0px 0px 10px 20px;
+    }
+    .btn-primary {
+      width: 100% !important;
+    }
+    .card-body {
+      img {
+        left: -43% !important;
+        top: 60px;
+      }
+    }
+  }
   // For larger screen sizes:
   @media screen and (min-width: 633px) and (max-width: 991px) {
+    h4 {
+      font-size: 3.5rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
     .discount-badge {
       transform: scale(2);
       right: 50px;
+    }
+    .add-to-cart {
+      width: 100% !important;
+      right: 0px !important;
+      padding: 0px 50px 22px 50px;
+      margin-top: -86px;
+    }
+    .btn-primary {
+      width: 100% !important;
+      font-size: 1.4rem !important;
+    }
+    .card {
+      margin-bottom: 40px;
+      .card-body {
+        margin-top: -39px !important;
+        img {
+          width: 100px;
+          top: 71px !important;
+          max-width: 100px;
+          left: -43.2% !important;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 776px) and (max-width: 991px) {
+    .card {
+      .card-body {
+        img {
+          left: -45% !important;
+        }
+      }
     }
   }
   @media screen and (min-width: 527px) and (max-width: 632px) {
@@ -390,12 +556,35 @@ body {
   }
   // For larger screen sizes:
   @media screen and (min-width: 992px) {
+    .card {
+      margin: -39px 15px 0px 15px;
+    }
     .successive-badge {
       top: -8px;
     }
     .discount-badge {
       transform: scale(1.2);
       bottom: 10px;
+    }
+    .add-to-cart {
+      width: 90% !important;
+      right: 0px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-primary {
+      width: 90%;
+      padding: 9px 15px 6px 40px !important;
+    }
+    .card {
+      .card-body {
+        img {
+          position: absolute;
+          left: -20px;
+          top: -18px;
+          transform: scale(0.8);
+        }
+      }
     }
   }
   @media screen and (min-width: 1200px) {

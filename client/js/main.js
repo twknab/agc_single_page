@@ -3,6 +3,9 @@
 
 
 $(document).ready(function () {
+  // Hide business hours:
+  $('#contact-wrapper').hide();
+
 
   // Get REST API data for Company Number and Hours - decides whether or not to show Call Me button (and converts user time to PST):
   let data = $.get( "https://www.algaecal.com/wp-json/acf/v3/options/options", function(info) {
@@ -18,8 +21,6 @@ $(document).ready(function () {
     // If business hours for today are still open, display phone number:
     if (hours[day].starting_time <= time && hours[day].closing_time > time) {
       $('#contact-wrapper').show();
-    } else {
-      $('#contact-wrapper').hide();
     }
   });
 

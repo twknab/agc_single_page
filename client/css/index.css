@@ -198,6 +198,7 @@ body {
     color: #0598b3;
     line-height: 1.1em; }
   #pricing-boxes-wrapper .discount-badge {
+    z-index: 100;
     padding: 20px;
     background-color: #e87b15;
     font-size: 1.4em;
@@ -220,46 +221,178 @@ body {
     #pricing-boxes-wrapper .discount-badge span:nth-child(1) {
       font-weight: 500; }
     #pricing-boxes-wrapper .discount-badge span:nth-child(2) {
-      font-weight: 300; }
+      font-weight: 500; }
     #pricing-boxes-wrapper .discount-badge span:nth-child(3) {
       font-size: .7em;
       left: 1px;
       bottom: 10px; }
   #pricing-boxes-wrapper .card {
-    z-index: -1;
     border: none;
     border-radius: none;
     box-shadow: 0px 0px 15px -3px #000000b0;
-    margin: -39px 33px -3px 33px;
+    margin: -39px 44px -3px 26px;
     padding-top: 19px; }
     #pricing-boxes-wrapper .card .card-img-top {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 13px; }
-  #pricing-boxes-wrapper #three-mo-supply {
-    width: 82%; }
-  #pricing-boxes-wrapper #six-mo-supply {
-    width: 98%; }
-  #pricing-boxes-wrapper #twelve-mo-supply {
-    width: 92%; }
+      margin-top: 6px; }
+    #pricing-boxes-wrapper .card .card-body {
+      padding-top: 0px;
+      text-align: center;
+      margin-top: -11px;
+      padding-bottom: 0px; }
+      #pricing-boxes-wrapper .card .card-body img {
+        width: 80px;
+        position: relative;
+        left: 25px;
+        max-width: 92px;
+        display: inline; }
+    #pricing-boxes-wrapper .card .card-text {
+      margin: 0px;
+      padding: 0px; }
+    #pricing-boxes-wrapper .card h4 {
+      font-size: 2rem;
+      margin-bottom: 1px; }
+      #pricing-boxes-wrapper .card h4 span:nth-child(1) {
+        vertical-align: super;
+        font-size: 1.2rem; }
+      #pricing-boxes-wrapper .card h4 span:nth-child(2) {
+        text-decoration: underline;
+        font-size: .4em;
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px; }
+    #pricing-boxes-wrapper .card h5 {
+      margin-bottom: 1px;
+      font-weight: 400; }
+      #pricing-boxes-wrapper .card h5 span {
+        vertical-align: super;
+        font-size: .6em;
+        font-weight: bold; }
+    #pricing-boxes-wrapper .card .btn-primary {
+      background-color: #38a33f;
+      border-color: #24875a;
+      font-weight: 400;
+      font-size: 1.1rem;
+      border-bottom-width: 6px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      letter-spacing: 1px;
+      padding: 9px 20px 6px 30px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px; }
+    #pricing-boxes-wrapper .card .btn-primary:hover {
+      background-color: #43c56c; }
+    #pricing-boxes-wrapper .card .seven-year-guarantee {
+      background-image: url(../img/7-years-guarantee-better-bone-health.png);
+      background-size: cover;
+      width: 77px;
+      height: 77px;
+      position: relative;
+      display: inline-block;
+      top: 68px;
+      right: 110px; }
+    #pricing-boxes-wrapper .card i {
+      padding-left: 5px;
+      font-size: 87%; }
+    #pricing-boxes-wrapper .card .add-to-cart {
+      position: relative;
+      display: inline-block;
+      right: 34px;
+      width: 115%; }
   #pricing-boxes-wrapper .successive-badge {
     position: relative;
     top: 17px; }
+  @media screen and (max-width: 337px) and (min-width: 365px) {
+    #pricing-boxes-wrapper .card-body img {
+      left: -20% !important;
+      top: 60px; } }
+  @media screen and (max-width: 365px) {
+    #pricing-boxes-wrapper h2 {
+      font-size: 1.25em; }
+    #pricing-boxes-wrapper i {
+      padding-left: 0px !important; }
+    #pricing-boxes-wrapper .add-to-cart {
+      width: 100% !important;
+      right: 0px !important;
+      padding-left: 10px;
+      margin-top: -72px; }
+    #pricing-boxes-wrapper .btn-primary {
+      width: 100% !important;
+      padding: 9px 0px 6px 35px !important; }
+    #pricing-boxes-wrapper .card-body {
+      padding-bottom: 0px; }
+      #pricing-boxes-wrapper .card-body img {
+        left: -80px !important;
+        top: 63px;
+        transform: scale(0.85); } }
+  @media screen and (max-width: 632px) and (min-width: 420px) {
+    #pricing-boxes-wrapper .add-to-cart {
+      width: 100% !important;
+      right: 0px !important;
+      margin-top: -67px;
+      padding: 0px 0px 10px 20px; }
+    #pricing-boxes-wrapper .btn-primary {
+      width: 100% !important; }
+    #pricing-boxes-wrapper .card-body img {
+      left: -43% !important;
+      top: 60px; } }
   @media screen and (min-width: 633px) and (max-width: 991px) {
+    #pricing-boxes-wrapper h4 {
+      font-size: 3.5rem; }
+    #pricing-boxes-wrapper h5 {
+      font-size: 1.5rem; }
     #pricing-boxes-wrapper .discount-badge {
       transform: scale(2);
-      right: 50px; } }
+      right: 50px; }
+    #pricing-boxes-wrapper .add-to-cart {
+      width: 100% !important;
+      right: 0px !important;
+      padding: 0px 50px 22px 50px;
+      margin-top: -86px; }
+    #pricing-boxes-wrapper .btn-primary {
+      width: 100% !important;
+      font-size: 1.4rem !important; }
+    #pricing-boxes-wrapper .card {
+      margin-bottom: 40px; }
+      #pricing-boxes-wrapper .card .card-body {
+        margin-top: -39px !important; }
+        #pricing-boxes-wrapper .card .card-body img {
+          width: 100px;
+          top: 71px !important;
+          max-width: 100px;
+          left: -43.2% !important; } }
+  @media screen and (min-width: 776px) and (max-width: 991px) {
+    #pricing-boxes-wrapper .card .card-body img {
+      left: -45% !important; } }
   @media screen and (min-width: 527px) and (max-width: 632px) {
     #pricing-boxes-wrapper .discount-badge {
       transform: scale(1.7);
       top: 12px;
       right: 50px; } }
   @media screen and (min-width: 992px) {
+    #pricing-boxes-wrapper .card {
+      margin: -39px 15px 0px 15px; }
     #pricing-boxes-wrapper .successive-badge {
       top: -8px; }
     #pricing-boxes-wrapper .discount-badge {
       transform: scale(1.2);
-      bottom: 10px; } }
+      bottom: 10px; }
+    #pricing-boxes-wrapper .add-to-cart {
+      width: 90% !important;
+      right: 0px !important;
+      margin-left: auto;
+      margin-right: auto; }
+    #pricing-boxes-wrapper .btn-primary {
+      width: 90%;
+      padding: 9px 15px 6px 40px !important; }
+    #pricing-boxes-wrapper .card .card-body img {
+      position: absolute;
+      left: -20px;
+      top: -18px;
+      transform: scale(0.8); } }
   @media screen and (min-width: 1200px) {
     #pricing-boxes-wrapper .discount-badge {
       transform: scale(1.3);
