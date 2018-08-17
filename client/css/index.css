@@ -228,7 +228,9 @@ body {
       bottom: 10px; }
   #pricing-boxes-wrapper .card {
     border: none;
-    border-radius: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     box-shadow: 0px 0px 15px -3px #000000b0;
     margin: -39px 44px -3px 26px;
     padding-top: 19px; }
@@ -534,5 +536,68 @@ body {
     padding-bottom: 1px;
     border-bottom: 2px solid #434343; }
 
-#as-seen-on h5 {
-  text-align: center; }
+#as-seen-on {
+  margin-top: 35px; }
+  #as-seen-on h5 {
+    text-align: center;
+    background-color: #4c813d;
+    color: white;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px; }
+  #as-seen-on .card {
+    border: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-shadow: 0px 0px 21px -4px #000000e8; }
+    #as-seen-on .card img {
+      height: 32px; }
+    #as-seen-on .card .card-body {
+      padding: .8rem;
+      margin-top: 5px; }
+      #as-seen-on .card .card-body .col-3 {
+        padding-left: 0px; }
+      #as-seen-on .card .card-body div:nth-child(1) div:nth-child(3) {
+        margin-left: -15px;
+        margin-right: 5px; }
+      #as-seen-on .card .card-body div:nth-child(1) div:nth-child(4) {
+        margin-top: 6px;
+        margin-bottom: auto; }
+      #as-seen-on .card .card-body div:nth-child(2) div {
+        margin-top: 7px;
+        padding-left: 0px;
+        padding-right: 0px; }
+        #as-seen-on .card .card-body div:nth-child(2) div div {
+          padding-right: 0px; }
+        #as-seen-on .card .card-body div:nth-child(2) div img {
+          height: 45px; }
+        #as-seen-on .card .card-body div:nth-child(2) div h4, #as-seen-on .card .card-body div:nth-child(2) div h5, #as-seen-on .card .card-body div:nth-child(2) div p {
+          display: inline-block; }
+        #as-seen-on .card .card-body div:nth-child(2) div h4 {
+          font-size: .95em;
+          font-style: italic;
+          vertical-align: top;
+          margin-bottom: 0px; }
+        #as-seen-on .card .card-body div:nth-child(2) div p {
+          display: block;
+          margin-top: -8px;
+          margin-bottom: 0px;
+          font-weight: 300;
+          font-size: .7em; }
+        #as-seen-on .card .card-body div:nth-child(2) div h6 {
+          font-size: .86rem; }
+        #as-seen-on .card .card-body div:nth-child(2) div .col-10 {
+          padding-left: 10px; }
+      #as-seen-on .card .card-body div:nth-child(2) #your-bones {
+        padding-left: 20px; }
+  #as-seen-on #amazon {
+    width: 85px;
+    height: auto; }
+
+#scientific-references {
+  margin-top: 30px; }
