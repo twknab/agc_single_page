@@ -9,3 +9,5 @@ If I could source higher resolution images of the bottles, I could improve the q
 # Cool Features
 
 1. The AlgaeCal logo is all HTML -- the little circle is done via CSS.
+
+

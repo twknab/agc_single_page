@@ -8,6 +8,8 @@ Note: Install gulp and gulp-sass from `package.json` via `npm install` and then 
 // Import Roboto:
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
+$blueColor: #008ba4;
+
 // SCSS For Body:
 body {
   font: {
@@ -872,5 +874,30 @@ body {
 
 
 #scientific-references {
-  margin-top: 30px;
+  // margin-top: 30px;
+  margin: 30px 0px 30px 0px;
+  h2 {
+    font-size: 1.4rem;
+    color: $blueColor;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 8px;
+  }
+  ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    padding: 0px 64px 0px 85px;
+    font-weight: 300;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+  a {
+    color: $blueColor;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
 }
