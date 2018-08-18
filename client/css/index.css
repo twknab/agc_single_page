@@ -9,13 +9,49 @@ body {
   margin-left: 0px;
   margin-right: 0px; }
 
+.btn-algaecal {
+  background-color: #38a33f;
+  color: white;
+  border-color: #24875a;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-bottom-width: 6px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  letter-spacing: 1px;
+  padding: 9px 20px 6px 30px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px; }
+
+.btn-algaecal:hover {
+  background-color: #43c56c; }
+
+i {
+  padding-left: 5px;
+  font-size: 87%; }
+
+.logo {
+  color: #676870;
+  margin-top: -1px;
+  font-size: 2.7rem; }
+
+.logo-circle {
+  width: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  border: 2px solid #3fac29;
+  height: 8px;
+  position: relative;
+  left: 95px;
+  top: 18px; }
+
 #header-wrapper {
   margin-left: 3px;
   margin-bottom: 9px; }
-  #header-wrapper h1 {
-    color: #676870;
-    margin-top: -1px;
-    font-size: 2.7rem; }
   #header-wrapper h2 {
     font-weight: 800;
     font-size: 1.4rem;
@@ -37,17 +73,6 @@ body {
     max-width: 23px;
     position: relative;
     right: 1px; }
-  #header-wrapper .logo-circle {
-    width: 8px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    display: inline-block;
-    -moz-border-radius: 50%;
-    border: 2px solid #3fac29;
-    height: 8px;
-    position: relative;
-    left: 95px;
-    top: 18px; }
   #header-wrapper #phone {
     color: #54b8cd; }
   @media screen and (min-width: 576px) {
@@ -232,7 +257,7 @@ body {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     box-shadow: 0px 0px 15px -3px #000000b0;
-    margin: -39px 44px -3px 26px;
+    margin: -39px 36px -3px 26px;
     padding-top: 19px; }
     #pricing-boxes-wrapper .card .card-img-top {
       margin-left: auto;
@@ -242,6 +267,7 @@ body {
       padding-top: 0px;
       text-align: center;
       margin-top: -11px;
+      margin-bottom: -3px;
       padding-bottom: 0px; }
       #pricing-boxes-wrapper .card .card-body img {
         width: 80px;
@@ -254,39 +280,32 @@ body {
       padding: 0px; }
     #pricing-boxes-wrapper .card h4 {
       font-size: 2rem;
-      margin-bottom: 1px; }
+      margin-bottom: 1px;
+      margin-top: 5px;
+      margin-left: 15px; }
       #pricing-boxes-wrapper .card h4 span:nth-child(1) {
         vertical-align: super;
         font-size: 1.2rem; }
       #pricing-boxes-wrapper .card h4 span:nth-child(2) {
         text-decoration: underline;
-        font-size: .4em;
+        font-size: .35em;
+        font-weight: 700;
         vertical-align: middle;
         position: relative;
         bottom: 1px; }
     #pricing-boxes-wrapper .card h5 {
       margin-bottom: 1px;
-      font-weight: 400; }
+      font-weight: 400;
+      background-image: url(../img/highlight.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 81%;
+      margin-left: 41px;
+      position: relative; }
       #pricing-boxes-wrapper .card h5 span {
         vertical-align: super;
         font-size: .6em;
         font-weight: bold; }
-    #pricing-boxes-wrapper .card .btn-primary {
-      background-color: #38a33f;
-      border-color: #24875a;
-      font-weight: 400;
-      font-size: 1.1rem;
-      border-bottom-width: 6px;
-      border-top: 0px;
-      border-left: 0px;
-      border-right: 0px;
-      letter-spacing: 1px;
-      padding: 9px 20px 6px 30px;
-      border-radius: 7px;
-      -webkit-border-radius: 7px;
-      -moz-border-radius: 7px; }
-    #pricing-boxes-wrapper .card .btn-primary:hover {
-      background-color: #43c56c; }
     #pricing-boxes-wrapper .card .seven-year-guarantee {
       background-image: url(../img/7-years-guarantee-better-bone-health.png);
       background-size: cover;
@@ -296,14 +315,27 @@ body {
       display: inline-block;
       top: 68px;
       right: 110px; }
-    #pricing-boxes-wrapper .card i {
-      padding-left: 5px;
-      font-size: 87%; }
     #pricing-boxes-wrapper .card .add-to-cart {
       position: relative;
       display: inline-block;
       right: 34px;
-      width: 115%; }
+      width: 115%;
+      margin-top: -8px; }
+  #pricing-boxes-wrapper h6 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .9em;
+    padding-top: 5px;
+    letter-spacing: 2.3px; }
+  #pricing-boxes-wrapper #most-popular {
+    background-color: #008ba4;
+    margin: 15px;
+    padding-bottom: 1px;
+    margin-top: -40px; }
+  #pricing-boxes-wrapper #most-popular-card {
+    margin: -4px 12px 12px 12px; }
   #pricing-boxes-wrapper .successive-badge {
     position: relative;
     top: 17px; }
@@ -536,9 +568,9 @@ body {
     padding-bottom: 1px;
     border-bottom: 2px solid #434343; }
 
-#as-seen-on {
+#as-seen-on-wrapper {
   margin-top: 35px; }
-  #as-seen-on h5 {
+  #as-seen-on-wrapper h5 {
     text-align: center;
     background-color: #4c813d;
     color: white;
@@ -549,65 +581,65 @@ body {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px; }
-  #as-seen-on .card {
+  #as-seen-on-wrapper .card {
     border: 0px;
     border-radius: 0px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     box-shadow: 0px 0px 21px -4px #000000e8; }
-    #as-seen-on .card img {
+    #as-seen-on-wrapper .card img {
       height: 32px; }
-    #as-seen-on .card .card-body {
+    #as-seen-on-wrapper .card .card-body {
       padding: .8rem;
       margin-top: 5px; }
-      #as-seen-on .card .card-body .col-3 {
+      #as-seen-on-wrapper .card .card-body .col-3 {
         padding-left: 0px; }
-      #as-seen-on .card .card-body div:nth-child(1) div:nth-child(3) {
+      #as-seen-on-wrapper .card .card-body div:nth-child(1) div:nth-child(3) {
         margin-left: -15px;
         margin-right: 5px; }
-      #as-seen-on .card .card-body div:nth-child(1) div:nth-child(4) {
+      #as-seen-on-wrapper .card .card-body div:nth-child(1) div:nth-child(4) {
         margin-top: 6px;
         margin-bottom: auto; }
-      #as-seen-on .card .card-body div:nth-child(2) div {
+      #as-seen-on-wrapper .card .card-body div:nth-child(2) div {
         margin-top: 7px;
         padding-left: 0px;
         padding-right: 0px; }
-        #as-seen-on .card .card-body div:nth-child(2) div div {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div div {
           padding-right: 0px; }
-        #as-seen-on .card .card-body div:nth-child(2) div img {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div img {
           height: 45px; }
-        #as-seen-on .card .card-body div:nth-child(2) div h4, #as-seen-on .card .card-body div:nth-child(2) div h5, #as-seen-on .card .card-body div:nth-child(2) div p {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div h4, #as-seen-on-wrapper .card .card-body div:nth-child(2) div h5, #as-seen-on-wrapper .card .card-body div:nth-child(2) div p {
           display: inline-block; }
-        #as-seen-on .card .card-body div:nth-child(2) div h4 {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div h4 {
           font-size: .95em;
           font-style: italic;
           vertical-align: top;
           margin-bottom: 0px; }
-        #as-seen-on .card .card-body div:nth-child(2) div p {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div p {
           display: block;
           margin-top: -8px;
           margin-bottom: 0px;
           font-weight: 300;
           font-size: .7em; }
-        #as-seen-on .card .card-body div:nth-child(2) div h6 {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div h6 {
           font-size: .86rem; }
-        #as-seen-on .card .card-body div:nth-child(2) div .col-10 {
+        #as-seen-on-wrapper .card .card-body div:nth-child(2) div .col-10 {
           padding-left: 10px; }
-      #as-seen-on .card .card-body div:nth-child(2) #your-bones {
+      #as-seen-on-wrapper .card .card-body div:nth-child(2) #your-bones {
         padding-left: 20px; }
-  #as-seen-on #amazon {
+  #as-seen-on-wrapper #amazon {
     width: 85px;
     height: auto; }
 
-#scientific-references {
+#scientific-references-wrapper {
   margin: 30px 0px 30px 0px; }
-  #scientific-references h2 {
+  #scientific-references-wrapper h2 {
     font-size: 1.4rem;
     color: #008ba4;
     font-weight: 400;
     text-align: center;
     margin-top: 8px; }
-  #scientific-references ol {
+  #scientific-references-wrapper ol {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 1.1em;
@@ -615,10 +647,66 @@ body {
     font-weight: 300;
     line-height: 1.4;
     word-break: break-word; }
-  #scientific-references a {
-    color: #008ba4;
+  #scientific-references-wrapper a {
+    color: #40a8bb;
     text-align: center;
     display: block;
     text-decoration: underline;
     font-size: 1.25rem;
     font-weight: 400; }
+
+#buy-now-wrapper #buy-now {
+  text-align: center;
+  margin-top: -10px;
+  margin-right: 16px; }
+
+#buy-now-wrapper img {
+  width: 30%;
+  position: relative;
+  z-index: 100;
+  top: 2px;
+  right: -5px; }
+
+#buy-now-wrapper a {
+  transform: scale(1.26);
+  padding-right: 37px;
+  border-bottom-width: 8px;
+  padding-top: 8px;
+  font-size: 1.16rem;
+  margin-right: 11px; }
+  #buy-now-wrapper a span {
+    position: relative;
+    top: 2px;
+    padding-right: 3px;
+    padding-left: 19px; }
+
+#footer-wrapper {
+  margin-bottom: 55px; }
+  #footer-wrapper #footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 51%;
+    transform: scale(0.9); }
+  #footer-wrapper #footer-menu {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center; }
+    #footer-wrapper #footer-menu li {
+      display: inline-block; }
+      #footer-wrapper #footer-menu li a {
+        border-right: 1.5px solid #616161;
+        padding: 0px 7px 0px 2px;
+        color: #757575;
+        font-size: 1.1em;
+        font-weight: 300; }
+      #footer-wrapper #footer-menu li a:hover {
+        color: #000;
+        text-decoration: underline; }
+  #footer-wrapper div ul li:last-child a {
+    border-right: none !important; }
+  #footer-wrapper span {
+    text-align: center;
+    display: block;
+    font-size: 1.12rem;
+    font-weight: 300;
+    margin-top: -2px; }

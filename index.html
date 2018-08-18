@@ -26,7 +26,7 @@
     <div class="row" id="header-wrapper">
       <div class="col-sm-6">
         <div class="logo-circle"></div>
-        <h1>AlgaeCal</h1>
+        <h1 class="logo">AlgaeCal</h1>
       </div>
       <div class="col-sm-6" id="contact-wrapper">
 
@@ -69,7 +69,7 @@
       <div class="wistia_responsive_padding" style="padding:56.25% 0 0
 0;position:relative;">
         <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-<div class="wistia_embed wistia_async_cecdwaq3dz videoFoam=true autoPlay=false playButton=true onByDefault=false controlsVisibleOnLoad=false seo=true"
+<div class="wistia_embed wistia_async_cecdwaq3dz stillUrl=./client/img/video-thumbnail-large.jpg videoFoam=true autoPlay=false onByDefault=false controlsVisibleOnLoad=false seo=true preload=true"
   style="height:100%;width:100%">
             <a href="#">
               <img src="./wistia/client/img/phone-icon.png" alt="Play AlgaeCal Video Now">
@@ -104,7 +104,7 @@
               <span>$</span><strong>2.58</strong>/Day!</h5>
             <div class="add-to-cart">
               <img src="./client/img/7-years-guarantee-better-bone-health.png" alt="7 Year Stronger Bones Guarantee with AlgaeCal Plus and Strontium Boost">
-              <a href="#" class="btn btn-primary">Add to Cart
+              <a href="#" class="btn btn-primary btn-algaecal">Add to Cart
                 <i class="fas fa-play"></i>
               </a>
             </div>
@@ -116,27 +116,30 @@
     <div class="col-lg-4">
       <!-- Discount Badge -->
       <div class="discount-badge successive-badge"><span>35</span><span>%</span> <span>OFF</span></div>
-      <div class="card">
-        <!-- Title -->
-        <h2 class="card-title">6 Month Supply</h2>
-        <!-- Sub-Title -->
-        <h3 class="card-subtitle mb-2">8 AlgaeCal Plus</h3>
-        <h3 class="card-subtitle mb-2">6 Strontium Boost</h3>
-        <!-- Image -->
-        <img class="card-img-top" id="six-mo-supply" src="./client/img/bottles-6-mo.png" alt="Bone Health - Bone Density - 6 Month Supply AlgaeCal Plus and Strontium Boost">
-        <!-- Price & Add to Cart -->
-        <div class="card-body">
-          <p class="card-text">
-            <h4><span>$</span>337
-              <span>USD</span>
-            </h4>
-            <h5>Only
-              <span>$</span><strong>2.09</strong>/Day!</h5>
-            <div class="add-to-cart">
-              <img src="./client/img/7-years-guarantee-better-bone-health.png" alt="7 Year Stronger Bones Guarantee with AlgaeCal Plus and Strontium Boost">
-              <a href="#" class="btn btn-primary">Add to Cart <i class="fas fa-play"></i></a>
-            </div>
-          </p>
+      <div id="most-popular">
+        <h6>Most Popular</h6>
+        <div class="card" id="most-popular-card">
+          <!-- Title -->
+          <h2 class="card-title">6 Month Supply</h2>
+          <!-- Sub-Title -->
+          <h3 class="card-subtitle mb-2">8 AlgaeCal Plus</h3>
+          <h3 class="card-subtitle mb-2">6 Strontium Boost</h3>
+          <!-- Image -->
+          <img class="card-img-top" id="six-mo-supply" src="./client/img/bottles-6-mo.png" alt="Bone Health - Bone Density - 6 Month Supply AlgaeCal Plus and Strontium Boost">
+          <!-- Price & Add to Cart -->
+          <div class="card-body">
+            <p class="card-text">
+              <h4><span>$</span>337
+                <span>USD</span>
+              </h4>
+              <h5>Only
+                <span>$</span><strong>2.09</strong>/Day!</h5>
+              <div class="add-to-cart">
+                <img src="./client/img/7-years-guarantee-better-bone-health.png" alt="7 Year Stronger Bones Guarantee with AlgaeCal Plus and Strontium Boost">
+                <a href="#" class="btn btn-primary btn-algaecal">Add to Cart <i class="fas fa-play"></i></a>
+              </div>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -162,7 +165,7 @@
               <span>$</span><strong>1.97</strong>/Day!</h5>
             <div class="add-to-cart">
               <img src="./client/img/7-years-guarantee-better-bone-health.png" alt="7 Year Stronger Bones Guarantee with AlgaeCal Plus and Strontium Boost">
-              <a href="#" class="btn btn-primary">Add to Cart
+              <a href="#" class="btn btn-primary btn-algaecal">Add to Cart
                 <i class="fas fa-play"></i>
               </a>
             </div>
@@ -290,7 +293,7 @@
   </div>
 
   <!-- As Seen On -->
-  <div class="row" id="as-seen-on">
+  <div class="row" id="as-seen-on-wrapper">
     <div class="col-sm-12">
       <div class="card">
         <h5 class="card-header">As Seen On:</h5>
@@ -341,7 +344,7 @@
   </div>
 
   <!-- Scientific References -->
-  <div class="row" id="scientific-references">
+  <div class="row" id="scientific-references-wrapper">
     <div class="col-sm-12">
       <h2>Scientific References</h2>
       <ol>
@@ -357,18 +360,23 @@
   </div>
 
   <!-- Buy Now Button -->
-  <div class="row">
+  <div class="row" id="buy-now-wrapper">
     <div class="col-sm-12">
-      <img class="card-img-top" style="width: auto !important;" src="http://via.placeholder.com/50x50" alt="7 Year Stronger Bones Guarantee">
-      <a href="#" class="btn btn-primary">Buy Now</a>
+      <div id="buy-now"> <img src="./client/img/7-years-guarantee-better-bone-health.png" alt="7 Year Stronger Bones Guarantee with AlgaeCal Plus and Strontium
+      Boost">
+        <a href="#" class="btn btn-primary btn-algaecal"><span>Buy Now <i class="fas fa-play"></i></span></a>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="row">
+  <div class="row" id="footer-wrapper">
     <div class="col-sm-12">
-      <h1>AlgaeCal</h1>
-      <ul>
+      <div id="footer-logo">
+        <div class="logo-circle"></div>
+        <h1 class="logo">AlgaeCal</h1>
+      </div>
+      <ul id="footer-menu">
         <li>
           <a href="#">Shipping & Returns</a>
         </li>
@@ -385,7 +393,7 @@
           <a href="#">Order Now</a>
         </li>
       </ul>
-      Copyright &#169; 2017 AlgaeCal
+      <span>Copyright &#169; 2018 AlgaeCal</span>
     </div>
   </div>
 

@@ -4,7 +4,12 @@
 
 $(document).ready(function () {
   // Hide business hours:
-  $('#contact-wrapper').hide();
+  ////////////////////////////////// 
+  //
+  //   UNHIDE LINE BELOW BEFORE YOU FINISH
+  //
+  //////////////////////////////////
+  // $('#contact-wrapper').hide();
 
 
   // Get REST API data for Company Number and Hours - decides whether or not to show Call Me button (and converts user time to PST):
@@ -26,7 +31,12 @@ $(document).ready(function () {
 
 
   // Hide Pricing Boxes by Default:
-  $('#pricing-boxes-wrapper').hide();
+  ////////////////////////////////// 
+  //
+  //   UNHIDE LINE BELOW BEFORE YOU FINISH
+  //
+  //////////////////////////////////
+  // $('#pricing-boxes-wrapper').hide();
 
   // Get Wistia Video
   window._wq = window._wq || [];

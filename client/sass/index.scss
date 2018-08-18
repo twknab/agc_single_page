@@ -4,36 +4,90 @@
 /* 
 Note: Install gulp and gulp-sass from `package.json` via `npm install` and then run `gulp styles` or `gulp watch` to render CSS output for any changes in this file.
 */
+//###########################
+//
+// GLOBAL STYLES
+// 
+//###########################
+// The following styles are global to all page elements:
 
 // Import Roboto:
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 $blueColor: #008ba4;
 
-// SCSS For Body:
+// Set font for body with backups:
 body {
   font: {
     // Set font to Glober with Roboto as backup:
     family: 'Glober', 'Roboto', sans-serif;
   }
 }
-
+// Decrease margin on all rows
 .row {
   margin-left: 0px;
   margin-right: 0px;
 }
+// Use custom button class globally
+.btn-algaecal {
+  background-color: #38a33f;
+  color: white;
+  border-color: #24875a;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-bottom-width: 6px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  letter-spacing: 1px;
+  padding: 9px 20px 6px 30px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+// Button hover
+.btn-algaecal:hover {
+  background-color: #43c56c;
+}
+i {
+  padding-left: 5px;
+  font-size: 87%;
+}
+// Set color, size and margin of Logo:
+.logo {
+  color: #676870;
+  margin-top: -1px;
+  font-size: 2.7rem;
+} // Adjust circle above Logo text:
+.logo-circle {
+  width: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  border: 2px solid #3fac29;
+  height: 8px;
+  position: relative;
+  left: 95px;
+  top: 18px;
+}
+//###########################
+//
+// NON-GLOBAL STYLES
+// 
+//###########################
+// The styles below are specific to their respective containers.
 
+/////////////////|
+//
+// HEADER & TAP-TO-CALL
+// 
+/////////////////|
 // SCSS for Header Wrapper (Logo and Phone):
 #header-wrapper {
   // Add left margin to header:
   margin-left: 3px;
   margin-bottom: 9px;
-  // Adjust color and margin of h1:
-  h1 {
-    color: #676870;
-    margin-top: -1px;
-    font-size: 2.7rem;
-  }
   // Adjust font-weight and size of h2:
   h2 {
     font-weight: 800;
@@ -64,19 +118,6 @@ body {
     position: relative;
     right: 1px;
   }
-  // Adjust circle above Logo text:
-  .logo-circle {
-    width: 8px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    display: inline-block;
-    -moz-border-radius: 50%;
-    border: 2px solid #3fac29;
-    height: 8px;
-    position: relative;
-    left: 95px;
-    top: 18px;
-  }
   // Set phone color:
   #phone {
     color: #54b8cd;
@@ -106,7 +147,11 @@ body {
     }
   }
 }
-
+/////////////////|
+//
+// HERO WRAPPER / BANNER IMAGE
+// 
+/////////////////|
 // SCSS For Hero Wrapper (Primary Banner):
 #hero-wrapper {
   $bg-color: #4c813d;
@@ -248,7 +293,11 @@ body {
     }
   }
 }
-
+/////////////////|
+//
+// ALGAECAL VIDEO
+// 
+/////////////////|
 // SCSS for Video Wrapper:
 #video-wrapper {
   margin-bottom: 2px;
@@ -294,8 +343,12 @@ body {
   }
 
 }
-
-// SCSS for Discount Badges
+/////////////////|
+//
+// PRICING BOXES
+// 
+/////////////////|
+// SCSS for Pricing Boxes
 #pricing-boxes-wrapper {
   margin-top: 24px;
   // style heading tags
@@ -355,7 +408,7 @@ body {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     box-shadow: 0px 0px 15px -3px #000000b0;
-    margin: -39px 44px -3px 26px;
+    margin: -39px 36px -3px 26px;
     padding-top: 19px;
     // adjust image padding on card
     .card-img-top {
@@ -367,6 +420,7 @@ body {
       padding-top: 0px;
       text-align: center;
       margin-top: -11px;
+      margin-bottom: -3px;
       padding-bottom: 0px;
       img {
         width: 80px;
@@ -384,6 +438,8 @@ body {
     h4 {
       font-size: 2rem;
       margin-bottom: 1px;
+      margin-top: 5px;
+      margin-left: 15px;
       // Adjust size on dollar sign
       span:nth-child(1) {
         vertical-align: super;
@@ -392,7 +448,8 @@ body {
       // Adjust size on USD text
       span:nth-child(2) {
         text-decoration: underline;
-        font-size: .4em;
+        font-size: .35em;
+        font-weight: 700;
         vertical-align: middle;
         position: relative;
         bottom: 1px;
@@ -402,32 +459,19 @@ body {
     h5 {
       margin-bottom: 1px;
       font-weight: 400;
+      background-image: url(../img/highlight.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 81%;
+      margin-left: 41px;
+      position: relative;
+      // top: 8px;
       span {
         vertical-align: super;
         font-size: .6em;
         font-weight: bold;
       }
     }
-
-    .btn-primary {
-      background-color: #38a33f;
-      border-color: #24875a;
-      font-weight: 400;
-      font-size: 1.1rem;
-      border-bottom-width: 6px;
-      border-top: 0px;
-      border-left: 0px;
-      border-right: 0px;
-      letter-spacing: 1px;
-      padding: 9px 20px 6px 30px;
-      border-radius: 7px;
-      -webkit-border-radius: 7px;
-      -moz-border-radius: 7px;
-    }
-    .btn-primary:hover {
-      background-color: #43c56c;
-    }
-
     .seven-year-guarantee {
       background-image: url(../img/7-years-guarantee-better-bone-health.png);
       background-size: cover;
@@ -438,17 +482,32 @@ body {
       top: 68px;
       right: 110px;
     }
-    
-    i {
-      padding-left: 5px;
-      font-size: 87%;
-    }
     .add-to-cart {
       position: relative;
       display: inline-block;
       right: 34px;
       width: 115%;
+      margin-top: -8px;
     }
+  }
+  h6 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .9em;
+    padding-top: 5px;
+    letter-spacing: 2.3px;
+  }
+  #most-popular {
+    background-color: $blueColor;
+    margin: 15px;
+    padding-bottom: 1px;
+    margin-top: -40px;
+  }
+  #most-popular-card {
+    margin: -4px 12px 12px 12px;
+
   }
   // Adjust positioning on successive badges:
   .successive-badge {
@@ -599,7 +658,11 @@ body {
     }
   }
 }
-
+/////////////////|
+//
+// NUTRITION FACTS
+// 
+/////////////////|
 // Nutrition Facts Wrapper
 #nutrition-facts-wrapper {
   margin-top: 30px;
@@ -704,6 +767,11 @@ body {
   }
 }
 
+/////////////////|
+//
+// 7 YEAR BONE GUARANTEE
+// 
+/////////////////|
 // SCSS Guarantee Wrapper
 #guarantee-wrapper {
   padding-top: 19px;
@@ -783,8 +851,13 @@ body {
   }
 }
 
+/////////////////|
+//
+// AS SEEN ON LOGOS & BOOKS
+// 
+/////////////////|
 // SCSS for As Seen On:
-#as-seen-on {
+#as-seen-on-wrapper {
   margin-top: 35px;
   h5 {
     text-align: center;
@@ -872,8 +945,12 @@ body {
   }
 }
 
-
-#scientific-references {
+/////////////////|
+//
+// SCIENTIFIC RESOURCES
+// 
+/////////////////|
+#scientific-references-wrapper {
   // margin-top: 30px;
   margin: 30px 0px 30px 0px;
   h2 {
@@ -893,11 +970,99 @@ body {
     word-break: break-word;
   }
   a {
-    color: $blueColor;
+    color: #40a8bb;
     text-align: center;
     display: block;
     text-decoration: underline;
     font-size: 1.25rem;
     font-weight: 400;
+  }
+}
+
+
+/////////////////|
+//
+// BUY NOW BUTTON
+// 
+/////////////////|
+// SCSS for Buy Now
+#buy-now-wrapper {
+  #buy-now {
+    text-align: center;
+    margin-top: -10px;
+    margin-right: 16px;
+  }
+  img {
+    width: 30%;
+    position: relative;
+    z-index: 100;
+    top: 2px;
+    right: -5px;
+  }
+  a {
+    transform: scale(1.26);
+    padding-right: 37px;
+    border-bottom-width: 8px;
+    padding-top: 8px;
+    font-size: 1.16rem;
+    margin-right: 11px;
+    span {
+      position: relative;
+      top: 2px;
+      padding-right: 3px;
+      padding-left: 19px;
+    }
+  }
+}
+
+/////////////////|
+//
+// FOOTER
+// 
+/////////////////|
+// SCSS for Footer:
+#footer-wrapper {
+  margin-bottom: 55px;
+  #footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 51%;
+    transform: scale(.9);
+  }
+  #footer-menu {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        border-right: 1.5px solid #616161;
+        padding: 0px 7px 0px 2px;
+        color: #757575;
+        font-size: 1.1em;
+        font-weight: 300;
+      }
+      a:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  }
+  div {
+    ul {
+      li:last-child {
+        a {
+
+          border-right: none !important;
+        }
+      }
+    }
+  }
+  span {
+    text-align: center;
+    display: block;
+    font-size: 1.12rem;
+    font-weight: 300;
+    margin-top: -2px;
   }
 }
