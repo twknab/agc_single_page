@@ -30,6 +30,8 @@ I've created a `gulpfile.js` with a watcher, so typing `gulp watch` will get thi
 
 - I did make a few design decisions, for example with the nutritional facts table, to ensure that some of the general spacings matched, between the AlgaeCal Pro and Strontium Plus cards. There was some tiny spacing differences in the graphic design mockup, between the two cards, and I opted to not include those minor regularities to keep the cards looking the same, structure-wise.
 
+- 7 year guarantee modal form I could not find in the JSON file retrieved from [API data](https://www.algaecal.com/wp-json/acf/v3/options/options)
+
 ### Thank You
 
 I sincerely have appreciated the opportunity to do an assessment project for you, and wanted to put my best foot forwards. Wishing you well and let me know if there's any trouble with any of the files or if you have any questions.

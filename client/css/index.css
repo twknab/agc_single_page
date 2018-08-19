@@ -68,6 +68,9 @@ i {
   left: 95px;
   top: 18px; }
 
+.form-row {
+  padding-bottom: 10px; }
+
 #header-wrapper {
   margin-left: 3px;
   margin-bottom: 9px; }
@@ -245,9 +248,11 @@ i {
     cursor: pointer; }
   #video-wrapper #play-button {
     padding-left: 0px;
-    font-size: 87%;
     color: white;
     font-size: 6vw; }
+    @media screen and (min-width: 992px) {
+      #video-wrapper #play-button {
+        font-size: 3vw; } }
   #video-wrapper #tap-to-play-button {
     display: inline;
     left: 50%;
@@ -259,11 +264,17 @@ i {
     #video-wrapper #tap-to-play-button p {
       display: inline;
       position: relative;
-      font-size: 1.3em;
+      font-size: 5.1vw;
       top: 12px;
       right: 8px;
       color: white;
       font-weight: 300; }
+      @media screen and (min-width: 992px) {
+        #video-wrapper #tap-to-play-button p {
+          font-size: 2.1vw; } }
+    @media screen and (min-width: 435px) {
+      #video-wrapper #tap-to-play-button {
+        margin-top: 4%; } }
   @media screen and (min-width: 576px) {
     #video-wrapper {
       padding: 40px 20px 30px 20px;
@@ -327,8 +338,7 @@ i {
     padding-top: 19px; }
     #pricing-boxes-wrapper .card .card-img-top {
       margin-left: auto;
-      margin-right: auto;
-      margin-top: 6px; }
+      margin-right: auto; }
     #pricing-boxes-wrapper .card .card-body {
       padding-top: 0px;
       text-align: center;
@@ -338,7 +348,7 @@ i {
       #pricing-boxes-wrapper .card .card-body img {
         position: relative;
         left: 25px;
-        max-width: 92px;
+        max-width: 77px;
         display: inline; }
     #pricing-boxes-wrapper .card .card-text {
       margin: 0px;
@@ -366,11 +376,19 @@ i {
       background-repeat: no-repeat;
       width: 81%;
       margin-left: 41px;
-      position: relative; }
+      position: relative;
+      bottom: 2px; }
       #pricing-boxes-wrapper .card h5 span {
         vertical-align: super;
         font-size: .6em;
         font-weight: bold; }
+      @media screen and (min-width: 418px) {
+        #pricing-boxes-wrapper .card h5 {
+          width: 200px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 4px;
+          margin-bottom: 8px; } }
     #pricing-boxes-wrapper .card .seven-year-guarantee {
       background-image: url(../img/7-years-guarantee-better-bone-health.png);
       background-size: cover;
@@ -386,6 +404,12 @@ i {
       right: 34px;
       width: 115%;
       margin-top: -8px; }
+      @media screen and (min-width: 420px) {
+        #pricing-boxes-wrapper .card .add-to-cart {
+          margin-top: -60px; } }
+      @media screen and (min-width: 776px) {
+        #pricing-boxes-wrapper .card .add-to-cart {
+          margin-bottom: 4%; } }
   #pricing-boxes-wrapper h6 {
     color: white;
     text-align: center;
@@ -470,7 +494,11 @@ i {
     #pricing-boxes-wrapper .discount-badge {
       transform: scale(1.7);
       top: 12px;
-      right: 50px; } }
+      right: 50px; }
+    #pricing-boxes-wrapper .card {
+      margin-bottom: 30px; }
+    #pricing-boxes-wrapper #most-popular {
+      margin-bottom: 30px; } }
   @media screen and (min-width: 992px) {
     #pricing-boxes-wrapper .card {
       margin: -39px 15px 0px 15px; }
@@ -506,6 +534,21 @@ i {
   #nutrition-facts-wrapper #strontium-header {
     padding-top: 12px;
     padding-bottom: 1px; }
+  @media screen and (min-width: 527px) {
+    #nutrition-facts-wrapper {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      #nutrition-facts-wrapper h1 {
+        font-size: 2.2em; }
+      #nutrition-facts-wrapper #strontium-header {
+        margin-top: 15px; } }
+  @media screen and (min-width: 992px) {
+    #nutrition-facts-wrapper #strontium-header {
+      margin-top: 0px;
+      padding-top: 0px; } }
+  @media screen and (min-width: 776px) {
+    #nutrition-facts-wrapper {
+      margin-bottom: 4%; } }
 
 .nutrition-card {
   border: 3px solid black; }
@@ -568,6 +611,9 @@ i {
   .nutrition-card .asterisk {
     vertical-align: super;
     font-size: .7rem; }
+  @media screen and (min-width: 776px) {
+    .nutrition-card {
+      padding-bottom: 2%; } }
 
 @media screen and (min-width: 992px) {
   #nutrition-facts-wrapper {
@@ -596,6 +642,13 @@ i {
     margin-top: 30px;
     font-weight: 400;
     width: 90%; }
+    @media screen and (min-width: 690px) {
+      #guarantee-wrapper h1 {
+        width: 100%;
+        text-align: center; } }
+    @media screen and (min-width: 1030px) {
+      #guarantee-wrapper h1 {
+        font-size: 3vw; } }
   #guarantee-wrapper h4 {
     font-size: 1.15rem;
     font-weight: 600;
@@ -605,6 +658,9 @@ i {
     font-size: 1.13rem;
     line-height: 1.28;
     margin-bottom: 0px; }
+  @media screen and (min-width: 690px) {
+    #guarantee-wrapper h5:last-child {
+      margin-bottom: 30px; } }
   #guarantee-wrapper #seven-years-guarantee-inner-wrap {
     margin: 20px;
     padding: 20px;
@@ -613,29 +669,66 @@ i {
       font-size: 1.1rem;
       font-weight: 300;
       width: 99%; }
+      @media screen and (min-width: 690px) {
+        #guarantee-wrapper #seven-years-guarantee-inner-wrap p {
+          padding: 30px 30px 0px 30px;
+          margin-bottom: 0px; } }
+      @media screen and (min-width: 990px) {
+        #guarantee-wrapper #seven-years-guarantee-inner-wrap p {
+          padding-left: 10%;
+          padding-right: 10%; } }
+      @media screen and (min-width: 1030px) {
+        #guarantee-wrapper #seven-years-guarantee-inner-wrap p {
+          font-size: 1.5em; } }
     #guarantee-wrapper #seven-years-guarantee-inner-wrap a {
       text-decoration: underline;
       color: #64b8c8; }
     #guarantee-wrapper #seven-years-guarantee-inner-wrap a:hover {
       color: #000; }
     #guarantee-wrapper #seven-years-guarantee-inner-wrap div {
-      margin-left: auto;
       margin-right: auto;
       margin-top: 21px;
       margin-bottom: 17px;
       margin-left: 23%; }
+      @media screen and (min-width: 423px) {
+        #guarantee-wrapper #seven-years-guarantee-inner-wrap div {
+          margin-right: auto;
+          margin-left: auto;
+          width: 174px; } }
   #guarantee-wrapper #badge {
     margin-top: 17px; }
+    @media screen and (min-width: 1030px) {
+      #guarantee-wrapper #badge {
+        transform: scale(1.2);
+        padding-top: 21px;
+        padding-bottom: 15px; } }
   #guarantee-wrapper #bio-pic {
     margin-top: 35px; }
   #guarantee-wrapper #bio-signature {
     margin-top: 9px;
     padding-bottom: 1px;
     border-bottom: 2px solid #434343; }
+  @media screen and (min-width: 776px) {
+    #guarantee-wrapper {
+      margin-bottom: 7%; } }
 
-#seven-year-modal h4 {
+#seven-year-modal h2 {
   color: #e47730;
   font-weight: 400; }
+
+#seven-year-modal h2, #seven-year-modal p {
+  padding: 5px; }
+
+#seven-year-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0px; }
+
+#seven-year-modal .modal-body {
+  padding: 0px 1rem 1rem 1rem; }
+
+#seven-year-modal .modal-footer {
+  padding-bottom: .5rem;
+  border: none; }
 
 #as-seen-on-wrapper {
   margin-top: 35px; }
@@ -650,6 +743,13 @@ i {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px; }
+    @media screen and (min-width: 749px) {
+      #as-seen-on-wrapper h5 {
+        font-size: 3vw; } }
+    @media screen and (min-width: 1120px) {
+      #as-seen-on-wrapper h5 {
+        font-size: 2vw;
+        padding: 6px; } }
   #as-seen-on-wrapper .card {
     border: 0px;
     border-radius: 0px;
@@ -658,6 +758,9 @@ i {
     box-shadow: 0px 0px 21px -4px #000000e8; }
     #as-seen-on-wrapper .card img {
       height: 32px; }
+      @media screen and (min-width: 749px) {
+        #as-seen-on-wrapper .card img {
+          height: 80px; } }
     #as-seen-on-wrapper .card .card-body {
       padding: .8rem;
       margin-top: 5px; }
@@ -669,6 +772,15 @@ i {
       #as-seen-on-wrapper .card .card-body div:nth-child(1) div:nth-child(4) {
         margin-top: 6px;
         margin-bottom: auto; }
+        @media screen and (min-width: 749px) {
+          #as-seen-on-wrapper .card .card-body div:nth-child(1) div:nth-child(4) {
+            margin-top: auto;
+            margin-bottom: auto;
+            position: relative;
+            top: 6px; } }
+      @media screen and (min-width: 570px) {
+        #as-seen-on-wrapper .card .card-body div:nth-child(1) {
+          text-align: center; } }
       #as-seen-on-wrapper .card .card-body div:nth-child(2) div {
         margin-top: 7px;
         padding-left: 0px;
@@ -677,6 +789,9 @@ i {
           padding-right: 0px; }
         #as-seen-on-wrapper .card .card-body div:nth-child(2) div img {
           height: 45px; }
+          @media screen and (min-width: 749px) {
+            #as-seen-on-wrapper .card .card-body div:nth-child(2) div img {
+              height: 100%; } }
         #as-seen-on-wrapper .card .card-body div:nth-child(2) div h4, #as-seen-on-wrapper .card .card-body div:nth-child(2) div h5, #as-seen-on-wrapper .card .card-body div:nth-child(2) div p {
           display: inline-block; }
         #as-seen-on-wrapper .card .card-body div:nth-child(2) div h4 {
@@ -694,11 +809,18 @@ i {
           font-size: .86rem; }
         #as-seen-on-wrapper .card .card-body div:nth-child(2) div .col-10 {
           padding-left: 10px; }
+          @media screen and (min-width: 749px) {
+            #as-seen-on-wrapper .card .card-body div:nth-child(2) div .col-10 {
+              margin-top: auto;
+              margin-bottom: auto; } }
       #as-seen-on-wrapper .card .card-body div:nth-child(2) #your-bones {
         padding-left: 20px; }
   #as-seen-on-wrapper #amazon {
     width: 85px;
     height: auto; }
+    @media screen and (min-width: 749px) {
+      #as-seen-on-wrapper #amazon {
+        width: 170px; } }
 
 #scientific-references-wrapper {
   margin: 30px 0px 30px 0px; }
@@ -728,13 +850,19 @@ i {
   text-align: center;
   margin-top: -10px;
   margin-right: 16px; }
+  @media screen and (min-width: 500px) {
+    #buy-now-wrapper #buy-now {
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto; } }
 
 #buy-now-wrapper img {
   width: 30%;
   position: relative;
   z-index: 100;
   top: 2px;
-  right: -5px; }
+  right: -5px;
+  max-width: 143px; }
 
 #buy-now-wrapper a {
   transform: scale(1.26);
@@ -754,8 +882,11 @@ i {
   #footer-wrapper #footer-logo {
     margin-left: auto;
     margin-right: auto;
-    width: 51%;
+    width: 169px;
+    text-align: center;
     transform: scale(0.9); }
+    #footer-wrapper #footer-logo .logo-circle {
+      left: 14px; }
   #footer-wrapper #footer-menu {
     list-style: none;
     padding-left: 0px;

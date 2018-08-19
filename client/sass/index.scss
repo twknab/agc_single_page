@@ -91,6 +91,9 @@ i {
   left: 95px;
   top: 18px;
 }
+.form-row {
+  padding-bottom: 10px;
+}
 //###########################
 //
 // NON-GLOBAL STYLES
@@ -378,9 +381,12 @@ i {
 
   #play-button {
     padding-left: 0px;
-    font-size: 87%;
+    // font-size: 87%;
     color: white;
     font-size: 6vw;
+    @media screen and (min-width: 992px) {
+      font-size: 3vw;
+    }
   }
 
   #tap-to-play-button {
@@ -394,11 +400,19 @@ i {
     p {
       display: inline;
       position: relative;
-      font-size: 1.3em;
+      font-size: 5.1vw;
       top: 12px;
       right: 8px;
       color: white;
       font-weight: 300;
+      @media screen and (min-width: 992px) {
+        font-size: 2.1vw;
+      }
+    }
+    @media screen and (min-width: 435px) {
+      // margin-top: 3%;
+      // transform: translate(-6%, 80%);
+      margin-top: 4%;
     }
   }
 
@@ -495,7 +509,6 @@ i {
     .card-img-top {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 6px;
     }
     .card-body {
       padding-top: 0px;
@@ -507,7 +520,7 @@ i {
         // width: 80px;
         position: relative;
         left: 25px;
-        max-width: 92px;
+        max-width: 77px;
         display: inline;
       }
     }
@@ -546,11 +559,18 @@ i {
       width: 81%;
       margin-left: 41px;
       position: relative;
-      // top: 8px;
+      bottom: 2px;
       span {
         vertical-align: super;
         font-size: .6em;
         font-weight: bold;
+      }
+      @media screen and (min-width: 418px) {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+        margin-bottom: 8px;
       }
     }
     .seven-year-guarantee {
@@ -569,6 +589,12 @@ i {
       right: 34px;
       width: 115%;
       margin-top: -8px;
+      @media screen and (min-width: 420px) {
+        margin-top: -60px;
+      }
+      @media screen and (min-width: 776px) {
+        margin-bottom: 4%;
+      }
     }
   }
   h6 {
@@ -631,7 +657,6 @@ i {
   }
   @media screen and (max-width: 632px) and (min-width: 420px) {
     .add-to-cart {
-      // padding: auto 50px auto 50px;
       width: 100% !important;
       right: 0px !important;
       margin-top: -67px;
@@ -697,6 +722,12 @@ i {
       top: 12px;
       right: 50px;
     }
+    .card {
+      margin-bottom: 30px;
+    }
+    #most-popular {
+      margin-bottom: 30px;
+    }
   }
   // For larger screen sizes:
   @media screen and (min-width: 992px) {
@@ -756,6 +787,25 @@ i {
   #strontium-header {
     padding-top: 12px;
     padding-bottom: 1px;
+  }
+  @media screen and (min-width: 527px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    h1 {
+      font-size: 2.2em;
+    }
+    #strontium-header {
+      margin-top: 15px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    #strontium-header {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  }
+  @media screen and (min-width: 776px) {
+    margin-bottom: 4%;
   }
 }
 .nutrition-card {
@@ -841,6 +891,9 @@ i {
     vertical-align: super;
     font-size: .7rem;
   }
+  @media screen and (min-width: 776px) {
+    padding-bottom: 2%;
+  }
 }
 @media screen and (min-width: 992px) {
   #nutrition-facts-wrapper {
@@ -880,6 +933,13 @@ i {
     margin-top: 30px;
     font-weight: 400;
     width: 90%;
+    @media screen and (min-width: 690px) {
+      width: 100%;
+      text-align: center;
+    }
+    @media screen and (min-width: 1030px) {
+      font-size: 3vw;
+    }
   }
   h4 {
     font-size: 1.15rem;
@@ -892,6 +952,11 @@ i {
     line-height: 1.28;
     margin-bottom: 0px;
   }
+  h5:last-child {
+    @media screen and (min-width: 690px) {
+      margin-bottom: 30px;
+    }
+  }
   #seven-years-guarantee-inner-wrap {
     // margin: -15px 20px 0px 20px;
     margin: 20px;
@@ -901,6 +966,17 @@ i {
       font-size: 1.1rem;
       font-weight: 300;
       width: 99%;
+      @media screen and (min-width: 690px) {
+        padding: 30px 30px 0px 30px;
+        margin-bottom: 0px;
+      }
+      @media screen and (min-width: 990px) {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      @media screen and (min-width: 1030px) {
+        font-size: 1.5em;
+      }
     }
     a {
       text-decoration: underline;
@@ -910,17 +986,24 @@ i {
       color: #000;
     }
     div {
-      margin-left: auto;
       margin-right: auto;
       margin-top: 21px;
-      // position: relative;
       margin-bottom: 17px;
       margin-left: 23%;
-      // left: 22%;
+      @media screen and (min-width: 423px) {
+        margin-right: auto;
+        margin-left: auto;
+        width: 174px;
+      }
     }
   }
   #badge {
     margin-top: 17px;
+    @media screen and (min-width: 1030px) {
+      transform: scale(1.2);
+      padding-top: 21px;
+      padding-bottom: 15px;
+    }
   }
   #bio-pic {
     margin-top: 35px;
@@ -930,11 +1013,28 @@ i {
     padding-bottom: 1px;
     border-bottom: 2px solid #434343;
   }
+  @media screen and (min-width: 776px) {
+    margin-bottom: 7%;
+  }
 }
 #seven-year-modal {
-  h4 {
+  h2 {
     color: $orangeColor;
     font-weight: 400;
+  }
+  h2, p {
+    padding: 5px;
+  }
+  .modal-header {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  .modal-body {
+    padding: 0px 1rem 1rem 1rem;
+  }
+  .modal-footer {
+    padding-bottom: .5rem;
+    border: none;
   }
 }
 
@@ -957,6 +1057,13 @@ i {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+    @media screen and (min-width: 749px) {
+      font-size: 3vw;
+    }
+    @media screen and (min-width: 1120px) {
+      font-size: 2vw;
+      padding: 6px;
+    }
   }
   .card {
     border: 0px;
@@ -966,7 +1073,9 @@ i {
     box-shadow: 0px 0px 21px -4px #000000e8;
     img {
       height: 32px;
-      
+      @media screen and (min-width: 749px) {
+        height: 80px;
+      }
     }
     .card-body {
       padding: .8rem;
@@ -983,6 +1092,15 @@ i {
         div:nth-child(4){
           margin-top: 6px;
           margin-bottom: auto;
+          @media screen and (min-width: 749px) {
+            margin-top: auto;
+            margin-bottom: auto;
+            position: relative;
+            top: 6px;
+          }
+        }
+        @media screen and (min-width: 570px) {
+          text-align: center;
         }
       }
       // Book Icons Row
@@ -996,6 +1114,9 @@ i {
           }
           img {
             height: 45px;
+            @media screen and (min-width: 749px) {
+              height: 100%;
+            }
           }
           h4, h5, p {
             display: inline-block;
@@ -1018,6 +1139,10 @@ i {
           }
           .col-10 {
             padding-left: 10px;
+            @media screen and (min-width: 749px) {
+              margin-top: auto;
+              margin-bottom: auto;
+            }
           }
         }
         #your-bones {
@@ -1029,6 +1154,9 @@ i {
   #amazon {
     width: 85px;
     height: auto;
+    @media screen and (min-width: 749px) {
+      width: 170px;
+    }
   }
 }
 
@@ -1078,6 +1206,11 @@ i {
     text-align: center;
     margin-top: -10px;
     margin-right: 16px;
+    @media screen and (min-width: 500px) {
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
   img {
     width: 30%;
@@ -1085,6 +1218,7 @@ i {
     z-index: 100;
     top: 2px;
     right: -5px;
+    max-width: 143px;
   }
   a {
     transform: scale(1.26);
@@ -1113,8 +1247,12 @@ i {
   #footer-logo {
     margin-left: auto;
     margin-right: auto;
-    width: 51%;
+    width: 169px;
+    text-align: center;
     transform: scale(.9);
+    .logo-circle {
+      left: 14px;
+    }
   }
   #footer-menu {
     list-style: none;
