@@ -26,7 +26,26 @@ body {
   -moz-border-radius: 7px; }
 
 .btn-algaecal:hover {
-  background-color: #43c56c; }
+  background-color: #43c56c;
+  border-color: #2b7c44; }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #34a13b;
+  border-color: #34a13b; }
+
+.btn-close-button {
+  background-color: #777777;
+  border-color: #4c4c4c; }
+
+.btn-close-button:hover {
+  background-color: darkgrey;
+  border-color: gray; }
+
+.modal-btn {
+  padding: 9px 30px 6px 30px; }
 
 i {
   padding-left: 5px;
@@ -613,6 +632,10 @@ i {
     margin-top: 9px;
     padding-bottom: 1px;
     border-bottom: 2px solid #434343; }
+
+#seven-year-modal h4 {
+  color: #e47730;
+  font-weight: 400; }
 
 #as-seen-on-wrapper {
   margin-top: 35px; }
