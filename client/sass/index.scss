@@ -156,6 +156,7 @@ i {
       text-align: right;
       position: relative;
       top: 15px;
+      display: none;
     }
     // Change h1 size
     h1 {
@@ -388,6 +389,13 @@ i {
       font-size: 3vw;
     }
   }
+  .play-button-hover {
+    color: rgb(226, 226, 226) !important;
+  }
+
+  // #play-button:hover {
+  //   color: grey;
+  // }
 
   #tap-to-play-button {
     display: inline;
@@ -445,6 +453,8 @@ i {
 /////////////////|
 // SCSS for Pricing Boxes
 #pricing-boxes-wrapper {
+  // Hide initially (will be revealed by JS during video)
+  // display: none;
   margin-top: 24px;
   // style heading tags
   h2, h3 {
@@ -595,6 +605,9 @@ i {
       @media screen and (min-width: 776px) {
         margin-bottom: 4%;
       }
+      @media screen and (min-width: 992px) {
+        margin-top: 2%;
+      }
     }
   }
   h6 {
@@ -605,6 +618,14 @@ i {
     font-size: .9em;
     padding-top: 5px;
     letter-spacing: 2.3px;
+  
+    @media screen and (min-width: 527px) {
+      font-size: 1.2em;
+      padding-top: 7px;
+    }
+    @media screen and (min-width: 992px) {
+      font-size: .9em;
+    }
   }
   #most-popular {
     background-color: $blueColor;
@@ -731,8 +752,8 @@ i {
   }
   // For larger screen sizes:
   @media screen and (min-width: 992px) {
-    .card {
-      margin: -39px 15px 0px 15px;
+    div:nth-child(odd) {
+      margin-top: 13px;
     }
     .successive-badge {
       top: -8px;
@@ -753,6 +774,7 @@ i {
       padding: 9px 15px 6px 40px !important;
     }
     .card {
+      margin: -39px 15px 0px 15px;
       .card-body {
         img {
           position: absolute;
@@ -798,14 +820,16 @@ i {
       margin-top: 15px;
     }
   }
+  @media screen and (min-width: 776px) {
+    margin-bottom: 4%;
+  }
   @media screen and (min-width: 992px) {
+    margin-top: 40px;
+    padding: 0px 2% 0px 2%;
     #strontium-header {
       margin-top: 0px;
       padding-top: 0px;
     }
-  }
-  @media screen and (min-width: 776px) {
-    margin-bottom: 4%;
   }
 }
 .nutrition-card {
@@ -895,11 +919,6 @@ i {
     padding-bottom: 2%;
   }
 }
-@media screen and (min-width: 992px) {
-  #nutrition-facts-wrapper {
-    margin-top: 40px;
-  }
-}
 
 /////////////////|
 //
@@ -910,7 +929,7 @@ i {
 #guarantee-wrapper {
   padding-top: 19px;
   @media screen and (min-width: 992px) {
-    padding-top: 40px;
+    padding: 3.5% 2% 0 2%;
   }
 
   #seven-years-guarantee {
@@ -1046,6 +1065,9 @@ i {
 // SCSS for As Seen On:
 #as-seen-on-wrapper {
   margin-top: 35px;
+  @media screen and (min-width: 992px) {
+    padding: 0 2% 0 2%;
+  }
   h5 {
     text-align: center;
     background-color: #4c813d;
@@ -1085,6 +1107,11 @@ i {
       }
       // Branding Icons Row
       div:nth-child(1){
+        div {
+          @media screen and (min-width: 749px) {
+            padding: 2% 4% 1% 4%;
+          }
+        }
         div:nth-child(3){
           margin-left: -15px;
           margin-right: 5px;
@@ -1109,23 +1136,45 @@ i {
           margin-top: 7px;
           padding-left: 0px;
           padding-right: 0px;
+          // Individual Book Columns
           div {
             padding-right: 0px;
-          }
-          img {
-            height: 45px;
             @media screen and (min-width: 749px) {
-              height: 100%;
+              padding: 0px 4% 2% 4% !important;
             }
           }
+          // Book Images
+          img {
+            height: 45px;
+            @media screen and (min-width: 570px) {
+              text-align: center;
+              height: 85px;
+            }
+            @media screen and (min-width: 749px) {
+              height: 100% !important;
+            }
+          }
+          // Book Titles and Sub-Text
           h4, h5, p {
             display: inline-block;
           }
+          h6, p {
+            @media screen and (min-width: 749px) {
+              font-size: 1.1em !important;
+              margin-left: 30px;
+            }
+          }
+
           h4 {
             font-size: .95em;
             font-style: italic;
             vertical-align: top;
             margin-bottom: 0px;
+            @media screen and (min-width: 749px) {
+              font-size: 1.4em;
+              padding: .4em;
+              margin-left: 30px;
+            }
           }
           p {
             display: block;
@@ -1133,13 +1182,16 @@ i {
             margin-bottom: 0px;
             font-weight: 300;
             font-size: .7em;
+            @media screen and (min-width: 749px) {
+              padding: .2em;
+            }
           }
           h6 {
             font-size: .86rem;
           }
           .col-10 {
             padding-left: 10px;
-            @media screen and (min-width: 749px) {
+            @media screen and (min-width: 570px) {
               margin-top: auto;
               margin-bottom: auto;
             }
@@ -1174,6 +1226,9 @@ i {
     font-weight: 400;
     text-align: center;
     margin-top: 8px;
+    @media screen and (min-width: 749px) {
+      font-size: 2rem;
+    }
   }
   ol {
     margin-top: 0;

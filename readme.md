@@ -24,6 +24,10 @@ I tried to add comments within my SASS file, HTML file and JS file to help clear
 
 I've created a `gulpfile.js` with a watcher, so typing `gulp watch` will get things going. You can also type `gulp styles` to process the SCSS manually without the watch file. Running `gulp` (default task), will instruct the user to either run one of the afore mentioned.
 
+### SEO Improvements
+
+It looks like Wistia can also be hooked into tracking -- and is something I would ideally setup if a live production site. I would also likely try and target individal keyword choices, based upon research (e.g, tools like SEMRush.com) and incorporate this more into body text and headings. For now my primary targeting was "Bone Density" and "Bone Health" and branding name, "AlgaeCal" -- these are included in most all `alt=""` tags for all images, and in most all copy paragraphs. This could fine tuned and dialed in a more scientific manner.
+
 ### Development Notes
 
 - Product Image notes: If I could source higher resolution images of the bottles, I could improve the quality and clarity of the product images (especially at larger screen sizes). I opted to scale the images using % widths in the CSS, so they would be responsive for larger displays. Because the images in the mockup had a low maximum resolution, the quality deteriorates as the images scale up. With some really nice high resolution product images, I could create some nicer web assets for larger screen sizes.

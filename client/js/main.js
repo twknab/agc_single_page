@@ -3,15 +3,6 @@
 
 
 $(document).ready(function () {
-  // Hide business hours:
-  ////////////////////////////////// 
-  //
-  //   UNHIDE LINE BELOW BEFORE YOU FINISH
-  //
-  //////////////////////////////////
-  // $('#contact-wrapper').hide();
-
-
   // Get REST API data for Company Number and Hours - decides whether or not to show Call Me button (and converts user time to PST):
   let data = $.get( "https://www.algaecal.com/wp-json/acf/v3/options/options", function(info) {
 
@@ -22,23 +13,14 @@ $(document).ready(function () {
       day = pstTime.format('d'), // PST day of week, 0-6 format
       time = pstTime.format('HHmm'); // PST hour and minute, 2400 format
 
-
     // If business hours for today are still open, display phone number:
     if (hours[day].starting_time <= time && hours[day].closing_time > time) {
       $('#contact-wrapper').show();
     }
   });
 
-
   // Hide Pricing Boxes by Default:
-  ////////////////////////////////// 
-  //
-  //   UNHIDE LINE BELOW BEFORE YOU FINISH
-  //
-  //////////////////////////////////
-  // $('#pricing-boxes-wrapper').hide();
-
-  // Play Video when 
+  $('#pricing-boxes-wrapper').hide();
 
   // Get Wistia Video
   window._wq = window._wq || [];
@@ -75,10 +57,17 @@ $(document).ready(function () {
         video.play();
       });
 
-
+      let playHover = false;
+      $('#video-play-button').hover( function() {
+        if (!playHover) {
+          $('#play-button').addClass('play-button-hover');
+          playHover = true;
+        } else {
+          $('#play-button').removeClass('play-button-hover');
+          playHover = false;
+        }
+      });
     }
   });
-
-
 
 });
