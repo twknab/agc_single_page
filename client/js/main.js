@@ -3,6 +3,11 @@
 
 
 $(document).ready(function () {
+
+  // Hide Pricing and Time by Default:
+  $('#pricing-boxes-wrapper').hide();
+  $('#contact-wrapper').hide();
+  
   // Get REST API data for Company Number and Hours - decides whether or not to show Call Me button (and converts user time to PST):
   let data = $.get( "https://www.algaecal.com/wp-json/acf/v3/options/options", function(info) {
 
@@ -18,9 +23,6 @@ $(document).ready(function () {
       $('#contact-wrapper').show();
     }
   });
-
-  // Hide Pricing Boxes by Default:
-  $('#pricing-boxes-wrapper').hide();
 
   // Get Wistia Video
   window._wq = window._wq || [];
@@ -67,6 +69,13 @@ $(document).ready(function () {
           playHover = false;
         }
       });
+
+      $('#buy-button').click( function() {
+        if ($('#pricing-boxes-wrapper').is(':hidden')) {
+          $('#pricing-boxes-wrapper').show();
+        }
+      });
+
     }
   });
 

@@ -16,6 +16,8 @@ I did not have the `Glober` font, and couldn't find any freeware versions -- so 
 
 6. I used the Wistia Video Player API so that when the play button the clicked, the play button hides. When the video ends, the video will reset and the button will re-appear.
 
+7. Clicking "Buy Now" at bottom of page will reveal bundles if they are still hidden (e.g, video has not been played or viewed).
+
 ## Comments
 
 I tried to add comments within my SASS file, HTML file and JS file to help clearly explain my thinking, and to help orient the reader.
