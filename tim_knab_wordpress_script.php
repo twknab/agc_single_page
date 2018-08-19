@@ -1,6 +1,6 @@
 <?php 
 
-// Note: I would place the snippet below into my child theme's `functions.php`:
+// Note: The snippet below would be placed into my child theme's `functions.php`:
 
 // include custom jQuery library of choice
 function custom_jquery()
