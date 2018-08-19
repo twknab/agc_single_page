@@ -38,58 +38,46 @@ $(document).ready(function () {
   //////////////////////////////////
   // $('#pricing-boxes-wrapper').hide();
 
+  // Play Video when 
+
   // Get Wistia Video
   window._wq = window._wq || [];
   window._wq.push({
     id: "cecdwaq3dz",
-    // video_thumbnail: "https://embed-ssl.wistia.com/deliveries/1a92364950dc0031a7ec983870ddce20b27582d0.jpg?video_still_time=292",
     options: {
       playerColor: "#4c813d",
     },
     onHasData: function (video) {
+
       video.bind("play", function () {
-        console.log("'play' event fired for " + video.name() + "! 🎉");
+        // Hide play button on video play
+        $('#video-play-button').hide();
+        $('#tap-to-play-button').hide();
         return video.unbind;
       });
 
-      // If second of video meets or exceeds 133 (2 minutes 13 seconds), pricing boxes will be display:
+      // When video exceeds 133s (2 min, 13 sec), display pricing boxes:
       video.bind("secondchange", function (s) {
         if (s >= 133) {
           $('#pricing-boxes-wrapper').show();
         }
       });
 
+      // When video ends, show custom play button again:
+      video.bind("end", function () {
+        video.replaceWith("cecdwaq3dz");
+        $('#video-play-button').show();
+        $('#tap-to-play-button').show();
+      });
+
+      // Play video when custom play button is clicked:
+      $("#video-play-button").click( function(){
+        video.play();
+      });
+
+
     }
   });
-
-  $(video).attr("poster", "https://embed-ssl.wistia.com/deliveries/1a92364950dc0031a7ec983870ddce20b27582d0.jpg?video_still_time=292");
-
-
-  // var baseURL = "http://fast.wistia.com/oembed/?url=";
-  // var accountURL = escape("http://home.wistia.com/medias/");
-  // var mediaHashedID = "cecdwaq3dz";
-
-  // function getThumbnailUrl(hashedID, callback) {
-  //   $.get(baseURL + accountURL + hashedID + "&format=json&callback=?,", callback);
-  //   $.get("http://fast.wistia.net/oembed?url=http://home.wistia.com/medias/cecdwaq3dz?embedType=async&videoWidth=640", function (jsonObj) {
-  //     thumbnail_url = jsonObj.thumbnail_url + '&' + 'video_still_time=292';
-  //     console.log(thumbnail_url);
-  //   });
-
-  // }
-
-  // function parseJSON(json) {
-  //   // console.log(json.thumbnail_url);
-  //   console.log(json);
-  // };
-
-  // getThumbnailUrl(mediaHashedID, parseJSON);
-
-
-  // let url= "http://fast.wistia.net/oembed?url=https://embed-ssl.wistia.com/deliveries/1a92364950dc0031a7ec983870ddce20b27582d0.jpg?video_still_time=292"
-
-
-
 
 
 

@@ -4,9 +4,17 @@ I did not have the `Glober` font, and couldn't find any freeware versions -- so 
 
 ## Cool Features
 
-1. The AlgaeCal logos are all HTML -- the little circle is done via CSS.
+1. The AlgaeCal logos are all HTML -- the little circle is done via CSS. This is a good method to keep another image out of the page, and speed up load time -- however, if the user didn't have Glober installed the logo would default to Roboto. To ensure the logo would look identical on all devices, I'd probably swap this out for a higher resolution transparent PNG image of the logo, for this particular situation.
 
 2. The "Tap to Call" javascript that controls whether or not to show the feature during business hours, takes the user's timezone and converts it to PST to determine if the business is open. (This needs to be tested more, but I used [Moment.JS and MomentTimezone.JS](https://momentjs.com/timezone/) libraries to do the conversions).
+
+3. I added a fav icon, gathered from your existing website.
+
+4. SEO metadata has been included, as well as use of `alt` tags on all images; AlgaeCal brand name and "bone density" keywords are used often.
+
+5. The play button and the "Tap to Play" is all done in HTML and CSS. The only image is the hand-drawn arrow itself. Which I could improve its responsiveness by having access to a larger resolution image of the arrow. (It's always best to have high resolution assets to scale them down for mobile, as we can always scale down OK, but scaling up to larger view ports can cause pixelation, etc). But the rollover effects and the gradient on the button, including the button rounded edges are all done in CSS.
+
+6. I used the Wistia Video Player API so that when the play button the clicked, the play button hides. When the video ends, the video will reset and the button will re-appear.
 
 ## Comments
 
