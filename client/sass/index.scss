@@ -16,6 +16,8 @@ Note: Install gulp and gulp-sass from `package.json` via `npm install` and then 
 
 $blueColor: #008ba4;
 $orangeColor: #e47730;
+$buttonHoverBackground: #43c56c;
+$buttonHoverBorder: #2b7c44;
 
 // Set font for body with backups:
 body {
@@ -46,17 +48,16 @@ body {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
 }
-// Button hover
+// Buttons and Button Hover
 .btn-algaecal:hover {
-  background-color: #43c56c;
-  border-color: #2b7c44;
+  background-color: $buttonHoverBackground;
+  border-color: $buttonHoverBorder;
 }
 .btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-color: #34a13b;
-  border-color: #34a13b;
+  background-color: $buttonHoverBackground;
+  border-color: $buttonHoverBorder;
 }
 .btn-close-button {
   background-color: #777777;
@@ -69,6 +70,7 @@ body {
 .modal-btn {
   padding: 9px 30px 6px 30px;
 }
+// Button Play Icon
 i {
   padding-left: 5px;
   font-size: 87%;
@@ -78,7 +80,8 @@ i {
   color: #676870;
   margin-top: -1px;
   font-size: 2.7rem;
-} // Adjust circle above Logo text:
+} 
+// Adjust circle above Logo text:
 .logo-circle {
   width: 8px;
   border-radius: 50%;
@@ -111,24 +114,11 @@ i {
   // Add left margin to header:
   margin-left: 3px;
   margin-bottom: 9px;
-  @media screen and (min-width: 576px) { 
-    // Give header 25px margin beneath:
-    margin-bottom: 25px;
-  }
-  h1 {
-    @media screen and (min-width: 576px) {
-      font-size: 3.5rem;
-    }
-  }
   // Adjust font-weight and size of h2:
   h2 {
     font-weight: 800;
     font-size: 1.4rem;
     margin-left: -3px;
-    // Media query to remove margin for small screensizes:
-    @media screen and (max-width: 461px) {
-      margin-bottom: 0px;
-    }
   }
   // Adjust font-size and position of h3:
   h3 {
@@ -150,30 +140,48 @@ i {
     position: relative;
     right: 1px;
   }
-  .logo-circle {
-    @media screen and (min-width: 576px) {
+  // Set phone color:
+  #phone {
+    color: #54b8cd;
+  }
+  // Hide Contact Wrapper:
+  #contact-wrapper {
+    display: none;
+  }
+  // Responsive Adjustments for Medium Sized Displays:
+  @media screen and (max-width: 461px) {
+    // Remove margin for small screen sizes:
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    // Give header 25px margin beneath:
+    margin-bottom: 25px;
+    h1 {
+      font-size: 3.5rem;
+    }
+    // Adjust logo circle position:
+    .logo-circle {
       height: 10px;
       width: 10px;
       left: 124px;
       top: 22px;
     }
-  }
-  #contact-wrapper {
-    @media screen and (min-width: 576px) {
+    #contact-wrapper {
       padding: 18px 18px 18px 0px;
       text-align: right;
       position: relative;
       top: 15px;
-      display: none;
+      // display: none;
     }
   }
-  // Set phone color:
-  #phone {
-    color: #54b8cd;
-    @media screen and (min-width: 576px) and (max-width: 672px){
+  @media screen and (min-width: 576px) and (max-width: 672px) {
+    #phone {
       display: block;
     }
   }
+
 }
 /////////////////|
 //
@@ -182,9 +190,7 @@ i {
 /////////////////|
 // SCSS For Hero Wrapper (Primary Banner):
 #hero-wrapper {
-  $bg-color: #4c813d;
-
-  background-color: $bg-color;
+  background-color: #4c813d;
   padding-top: 26px;
   background-image: url(../img/green-leaves-bg.jpg);
   background-size: 160% 151%;
@@ -346,7 +352,6 @@ i {
 
   // Center play button elements:
   #video-play-button, #play-button {
-    // display: none;
     left: 50%;
     top: 50%;
     position: absolute !important;
@@ -386,20 +391,12 @@ i {
 
   #play-button {
     padding-left: 0px;
-    // font-size: 87%;
     color: white;
     font-size: 6vw;
-    @media screen and (min-width: 992px) {
-      font-size: 3vw;
-    }
   }
   .play-button-hover {
     color: rgb(226, 226, 226) !important;
   }
-
-  // #play-button:hover {
-  //   color: grey;
-  // }
 
   #tap-to-play-button {
     display: inline;
@@ -417,18 +414,15 @@ i {
       right: 8px;
       color: white;
       font-weight: 300;
-      @media screen and (min-width: 992px) {
-        font-size: 2.1vw;
-      }
     }
-    @media screen and (min-width: 435px) {
-      // margin-top: 3%;
-      // transform: translate(-6%, 80%);
+  }
+  // For medium sized screen displays:
+  @media screen and (min-width: 435px) {
+    #tap-to-play-button {
       margin-top: 4%;
     }
   }
-
-  // For larger screen sizes:
+  // For larger screen displays:
   @media screen and (min-width: 576px) {
     padding: 40px 20px 30px 20px;
     margin-top: auto;
@@ -447,6 +441,16 @@ i {
       margin-bottom: 50px;
     }
 
+  }
+  @media screen and (min-width: 992px) {
+    #play-button {
+      font-size: 3vw;
+    }
+    #tap-to-play-button {
+      p {
+        font-size: 2.1vw;
+      }
+    }
   }
 
 }
@@ -577,13 +581,6 @@ i {
         font-size: .6em;
         font-weight: bold;
       }
-      @media screen and (min-width: 418px) {
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4px;
-        margin-bottom: 8px;
-      }
     }
     .seven-year-guarantee {
       background-image: url(../img/7-years-guarantee-better-bone-health.png);
@@ -601,6 +598,12 @@ i {
       right: 34px;
       width: 115%;
       margin-top: -8px;
+      @media screen and (max-width: 365px) {
+        margin-top: -60px;
+      }
+      @media screen and (min-width: 383px) and (max-width: 420px) {
+        margin-top: 2%;
+      }
       @media screen and (min-width: 420px) {
         margin-top: -60px;
       }
@@ -608,7 +611,7 @@ i {
         margin-bottom: 4%;
       }
       @media screen and (min-width: 992px) {
-        margin-top: 2%;
+        margin-top: 2% !important;
       }
     }
   }
@@ -654,7 +657,7 @@ i {
     }
   @media screen and (max-width: 365px) {
     h2 {
-     font-size: 1.25em; 
+      font-size: 1.25em; 
     }
     i {
       padding-left: 0px !important;
@@ -676,6 +679,18 @@ i {
         top: 63px;
         transform: scale(.85);
       }
+    }
+  }
+  @media screen and (min-width: 418px) {
+    h5 {
+      margin-top: 4px;
+    }
+  }
+  @media screen and (min-width: 400px) {
+    h5 {
+      max-width: 200px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
   }
   @media screen and (max-width: 632px) and (min-width: 420px) {
@@ -786,6 +801,10 @@ i {
         }
       }
     }
+    #most-popular {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
   @media screen and (min-width: 1200px) {
     .discount-badge {
@@ -836,7 +855,6 @@ i {
 }
 .nutrition-card {
   border: 3px solid black;
-  // height: 92%;
   h2 {
     padding-top: 18px;
     text-align: center;
@@ -979,7 +997,6 @@ i {
     }
   }
   #seven-years-guarantee-inner-wrap {
-    // margin: -15px 20px 0px 20px;
     margin: 20px;
     padding: 20px;
     background-color: white;
@@ -1046,17 +1063,19 @@ i {
   h2, p {
     padding: 5px;
   }
-  .modal-header {
-    border-bottom: none;
-    padding-bottom: 0px;
-  }
   .modal-body {
     padding: 0px 1rem 1rem 1rem;
+    h3 {
+      padding-top: 25px;
+    }
+    img {
+      width: 100% !important;
+    }
   }
-  .modal-footer {
-    padding-bottom: .5rem;
-    border: none;
-  }
+  // .modal-footer {
+  //   padding-bottom: .5rem;
+  //   border: none;
+  // }
 }
 
 /////////////////|

@@ -38,9 +38,11 @@ I've included a folder called `/developer_resources` in the root of the project.
 
 - Product Image notes: If I could source higher resolution images of the bottles, I could improve the quality and clarity of the product images (especially at larger screen sizes). I opted to scale the images using % widths in the CSS, so they would be responsive for larger displays. Because the images in the mockup had a low maximum resolution, the quality deteriorates as the images scale up. With some really nice high resolution product images, I could create some nicer web assets for larger screen sizes.
 
-- I did make a few design decisions, for example with the nutritional facts table, to ensure that some of the general spacings matched, between the AlgaeCal Pro and Strontium Plus cards. There was some tiny spacing differences in the graphic design mockup, between the two cards, and I opted to not include those minor regularities to keep the cards looking the same, structure-wise.
+- I did make a few design decisions, for example with the nutritional facts table, to ensure that some of the general spacings matched, between the AlgaeCal Pro and Strontium Plus cards. There was some tiny spacing differences in the graphic design mockup, between the two cards, and I opted to not include those minor irregularities to keep the cards looking the same, structure-wise.
 
-- 7 year guarantee modal form I could not find in the JSON file retrieved from [API data](https://www.algaecal.com/wp-json/acf/v3/options/options)
+### Improvements
+
+I would refactor and clean up my media queries, if there was something that immedietely stood out that could use some refactoring. For brevity's sake, and to limit time investment for a non-production page, I've kept things as is for now.
 
 ### Thank You
 

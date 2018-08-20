@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   // Hide Pricing and Time by Default:
   $('#pricing-boxes-wrapper').hide();
-  // $('#contact-wrapper').hide();
+  $('#contact-wrapper').hide();
   
   // GET Phone and Hours business data using AJAX:
   /*
@@ -20,9 +20,8 @@ $(document).ready(function () {
         hours = info.acf.office_hours,
         pstTime = moment.tz(moment.tz(), "America/Los_Angeles"),
         day = pstTime.format('d'),
-        time = pstTime.format('HHmm');
-
-        time = 1100;
+        time = pstTime.format('HHmm'),
+        modal7YearContent = info.acf['7yr_full_copy'];
 
       // Set phone number on page to number retrieved from API:
       $('#phone').html(phone);
@@ -31,6 +30,9 @@ $(document).ready(function () {
       if (hours[day].starting_time <= time && hours[day].closing_time > time) {
         $('#contact-wrapper').show();
       }
+
+      // Set modal content to info retrieved from 7 year content propery:
+      $('.modal-body').html(modal7YearContent);
     },
     // If GET fires off any errors:
     error: function (err) {
