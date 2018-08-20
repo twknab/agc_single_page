@@ -1,4 +1,7 @@
-# Font Notes
+# AlgaeCal Inc. Single Page Mockup Notes
+
+
+## Font Notes
 
 I did not have the `Glober` font, and couldn't find any freeware versions -- so I opted to do everything with Roboto, matching as very best as I could, despite not having the same font as in the mockup. I also set sans-serif as a 3rd fall back option in the event that Glober is not found on the system and if Roboto fails to load via Google Fonts. Because I was not able to test with the Glober font locally, there might need to be a few tweaks for a pixel-perfect.
 
@@ -26,25 +29,25 @@ I tried to add comments within my SASS file, HTML file and JS file to help clear
 
 I've created a `gulpfile.js` with a watcher, so typing `gulp watch` will get things going. You can also type `gulp styles` to process the SCSS manually without the watch file. Running `gulp` (default task), will instruct the user to either run one of the afore mentioned.
 
-### SEO Improvements
+## SEO Improvements
 
 It looks like Wistia can also be hooked into tracking -- and is something I would ideally setup if a live production site. I would also likely try and target individal keyword choices, based upon research (e.g, tools like SEMRush.com) and incorporate this more into body text and headings. For now my primary targeting was "Bone Density" and "Bone Health" and branding name, "AlgaeCal" -- these are included in most all `alt=""` tags for all images, and in most all copy paragraphs. This could fine tuned and dialed in a more scientific manner.
 
-### Developer Resources
+## Developer Resources
 
 I've included a folder called `/developer_resources` in the root of the project. Includes some screenshots at mobile, tablet and laptop displays, and includes some design reosurces as well that were used in the project.
 
-### Development Notes
+## Development Notes
 
 - Product Image notes: If I could source higher resolution images of the bottles, I could improve the quality and clarity of the product images (especially at larger screen sizes). I opted to scale the images using % widths in the CSS, so they would be responsive for larger displays. Because the images in the mockup had a low maximum resolution, the quality deteriorates as the images scale up. With some really nice high resolution product images, I could create some nicer web assets for larger screen sizes.
 
 - I did make a few design decisions, for example with the nutritional facts table, to ensure that some of the general spacings matched, between the AlgaeCal Pro and Strontium Plus cards. There was some tiny spacing differences in the graphic design mockup, between the two cards, and I opted to not include those minor irregularities to keep the cards looking the same, structure-wise.
 
-### Improvements
+## Code Improvements
 
-I would refactor and clean up my media queries, if there was something that immedietely stood out that could use some refactoring. For brevity's sake, and to limit time investment for a non-production page, I've kept things as is for now.
+One way the code could be improved, upon immediate observation, is refactoring my media queries. I placed many of them within elements SASS style, and for ease of readability, for other developer's sake, these could be cleaned up a little so they are a bit more organized. For timeliness's sake, and for the scope of this mockup, as this is not a production page, I opted to send it as it is right now to show you my capabilities and wanted to alert you that I'd be happy to invest more time and better organize some of the media queries.
 
-### Thank You
+## Thank You
 
 I sincerely have appreciated the opportunity to do an assessment project for you, and wanted to put my best foot forwards. Wishing you well and let me know if there's any trouble with any of the files or if you have any questions.
 
