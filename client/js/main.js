@@ -48,6 +48,12 @@ $(document).ready(function () {
     id: "cecdwaq3dz", // video ID
     options: {
       playerColor: "#4c813d",
+      plugin: {
+        "captions-v1": {
+          onByDefault: false,
+          language: 'eng'
+        }
+      }
     },
     onHasData: function (video) {
 
