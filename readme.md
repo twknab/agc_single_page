@@ -1,6 +1,5 @@
 # AlgaeCal Inc. Single Page Mockup Notes
 
-
 ## Font Notes
 
 I did not have the `Glober` font, and couldn't find any freeware versions -- so I opted to do everything with Roboto, matching as very best as I could, despite not having the same font as in the mockup. I also set sans-serif as a 3rd fall back option in the event that Glober is not found on the system and if Roboto fails to load via Google Fonts. Because I was not able to test with the Glober font locally, there might need to be a few tweaks for a pixel-perfect.
